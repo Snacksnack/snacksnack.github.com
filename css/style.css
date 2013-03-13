@@ -1,88 +1,157 @@
-@charset 'utf-8';
+@font-face{font-family:'EasonPro';src:url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-regular-webfont.eot');src:url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-regular-webfont.eot?#iefix') format('embedded-opentype'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-regular-webfont.woff') format('woff'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-regular-webfont.ttf') format('truetype'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-regular-webfont.svg#EasonProregular') format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'EasonPro';src:url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-italic-webfont.eot');src:url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-italic-webfont.eot?#iefix') format('embedded-opentype'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-italic-webfont.woff') format('woff'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-italic-webfont.ttf') format('truetype'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-italic-webfont.svg#EasonProitalic') format('svg');font-weight:normal;font-style:italic}
+@font-face{font-family:'EasonPro';src:url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-bold-webfont.eot');src:url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-bold-webfont.eot?#iefix') format('embedded-opentype'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-bold-webfont.woff') format('woff'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-bold-webfont.ttf') format('truetype'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-bold-webfont.svg#EasonProBold') format('svg');font-weight:bold;font-style:normal}
 
-@font-face {
-  font-family: "Open Sans";
-  src: url("../font/OpenSans-Bold.ttf");
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
 }
 
 body {
-    background-image:url("../img/bg.jpg");
-    background-size: auto, contain;
-    background-position: center, bottom;
-    color: #414141;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 11px;
+	margin: 0 auto;
+	width: 750px;
+	font-family: 'Droid Sans', sans-serif;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
-.content {
-    background-color: rgba(255,255,255,0.95);
-    margin: 10% auto 0% auto;
-    width: 360px;
-    box-shadow: 0 10px 100px #e5cbb4;
-    border: 1px solid rgba(5, 5, 5, 0.1);
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
 }
 
-.c {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    width: 90%;
-    text-align: center;
+h1, h2, #footerText{
+	font-family: EasonPro, Times New Roman, serif;
 }
 
-.logo {
-	background-image: url("../img/logo.png");
-	background-repeat: no-repeat;
-	min-height: 100px;
+#header, #footer {
+	padding: 15px;
 }
 
-.cb, .logo {
-	margin: 15px 0 15px 0;
+#header h1 {
+	font-size: 42px;
+	padding-bottom: 5px;
 }
 
-.cb {
-	background-color: rgba(255,255,255,1);
-	box-shadow: 1px 2px 1px rgba(5, 5, 5, 0.1);
+#navigation li {
+	display: inline;
+	float: none;
+	padding: 5px 0px 5px 30px;
 }
 
-p {
-    font-weight: 400;
+#navigation li.first-item, ul#menu li.last-item {
+	padding-left: 0px;
 }
 
-ul,ol,dl {
-    list-style-type: none;
+a {
+	text-decoration: none;
+	transition: color;
+	transition-duration: 400ms;
+	-webkit-transition: color;
+	-webkit-transition-duration: 400ms;
+	-moz-transition: color;
+	-moz-transition-duration: 400ms;
+	-o-transition: color; 
+	-o-transition-duration: 400ms;
 }
 
-a, #clock {
-    text-decoration: none;
-    color: #414141;
-    font-weight: 300;
-    font-size: 20px;
+a:hover {
+	text-decoration: none;
+	transition: color, text-shadow;
+	transition-duration: 200ms;
+	-webkit-transition: color, text-shadow;
+	-webkit-transition-duration: 200ms;
+	-moz-transition: color, text-shadow;
+	-moz-transition-duration: 200ms;
+	-o-transition: color, text-shadow;
+	-o-transition-duration: 200ms;
 }
 
-.searchBox, .searchButton {
-	border: none;
+.text  a {
+	display: block;
 }
 
-.searchBox {
-	color: #414141;
-	margin: 0;
-	padding: 5px 0 5px 2px;
-	background: none;
+#scribble-list {
+	padding: 5px;
 }
 
-.searchButton {
-	color: #414141;
-	margin-left: -3px;
-	padding: 4px 15px 4px 15px;
-	background: rgba(5, 5, 5, 0.1);
+#content {
+	padding: 15px;
+	color: #222222;
+	font-size: 13px;
 }
-@media handheld,only screen and (max-width: 400px) {
-	.logo {
-		background-image:url("../img/logo-small.png");
-	}
-	
-    .content {
-        width: 180px;
-    }
+
+#content hr {
+	margin: 10px 0 10px 0;
+}
+
+#footer, #push{
+	height: 50px; /* .push must be the same height as .footer */
+	padding: 0;
+}
+
+#footerText {
+	padding: 15px;
+}
+
+.title {
+	font-family: EasonPro, Times New Roman, serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.signature {
+	font-family: 'Marck Script', cursive;
+	font-size: 17px;
+}
+
+/* Just for roster list */
+#content ul li {
+	display: block;
+}
+
+/* Color override for quick styling */
+body {
+	background-color: #EDEEF0;
+}
+
+#header, #footer, #wrapper{
+	-moz-box-shadow: 0px 0px 15px 5px #454141;
+	-webkit-box-shadow: 0px 0px 15px 5px #454141;
+	box-shadow: 0px 0px 15px 5px #454141;
+}
+
+#header, #footer {
+	background-color: #454141;
+	color: #E1DEE5;
+}
+
+#wrapper  {
+	background-color: #E1DEE5;
+}
+
+#content {
+	color: #454141;
+}
+
+a {
+	color: #E1DEE5;
+}
+
+a:hover {
+	text-shadow: 0 0 6px #E1DEE5;
+}
+
+#content a {
+	color: #454141;
+}
+
+#content a:hover {
+	text-shadow: 0 0 6px #454141;
 }
