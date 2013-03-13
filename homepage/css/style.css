@@ -7,8 +7,7 @@
 
 body {
     background-image:url("../img/bg.jpg");
-    background-size: auto, contain;
-    background-position: center, bottom;
+    background-size: 100%, 100%;
     color: #414141;
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
