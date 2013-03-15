@@ -77,8 +77,13 @@ a:hover {
 	display: block;
 }
 
-#scribble-list {
-	padding: 5px;
+.code {
+	width: 690px;
+	margin: 5px;
+	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
 }
 
 #content {
@@ -119,9 +124,16 @@ a:hover {
 /* Color override for quick styling */
 body {
 	background-color: #EDEEF0;
+	/*background-color: #6d695c;
+	background-image:
+	repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+	background-size: 70px 120px;*/
 }
 
-#header, #footer, #wrapper{
+#header, #footer, #wrapper, .code {
 	-moz-box-shadow: 0px 0px 5px 0px #454141;
 	-webkit-box-shadow: 0px 0px 5px 0px #454141;
 	box-shadow: 0px 0px 5px 0px #454141;
@@ -155,3 +167,7 @@ a:hover {
 #content a:hover {
 	text-shadow: 0 0 6px #454141;
 }
+
+.code {
+	background-color: #EDEEF0;
+	border-color: #454141;
