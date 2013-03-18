@@ -1,173 +1,118 @@
-@font-face{font-family:'EasonPro';src:url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-regular-webfont.eot');src:url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-regular-webfont.eot?#iefix') format('embedded-opentype'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-regular-webfont.woff') format('woff'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-regular-webfont.ttf') format('truetype'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-regular-webfont.svg#EasonProregular') format('svg');font-weight:normal;font-style:normal}
-@font-face{font-family:'EasonPro';src:url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-italic-webfont.eot');src:url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-italic-webfont.eot?#iefix') format('embedded-opentype'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-italic-webfont.woff') format('woff'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-italic-webfont.ttf') format('truetype'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-italic-webfont.svg#EasonProitalic') format('svg');font-weight:normal;font-style:italic}
-@font-face{font-family:'EasonPro';src:url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-bold-webfont.eot');src:url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-bold-webfont.eot?#iefix') format('embedded-opentype'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-bold-webfont.woff') format('woff'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-bold-webfont.ttf') format('truetype'),url('https://d1h9a8s8eodvjz.cloudfront.net//fonts/eason/v1/easonpro-bold-webfont.svg#EasonProBold') format('svg');font-weight:bold;font-style:normal}
-
-* {
+html, body {
+	height: 100%;
 	margin: 0;
 	padding: 0;
 }
 
-html, body {
-	height: 100%;
-}
-
 body {
-	margin: 0 auto;
-	width: 750px;
-	font-family: 'Droid Sans', sans-serif;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-
-#wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
-}
-
-h1, h2, #footerText{
-	font-family: EasonPro, Times New Roman, serif;
-}
-
-#header, #footer {
-	padding: 15px;
-}
-
-#header h1 {
-	font-size: 42px;
-	padding-bottom: 5px;
-}
-
-#navigation li {
-	display: inline;
-	float: none;
-	padding: 5px 0px 5px 30px;
-}
-
-#navigation li.first-item, ul#menu li.last-item {
-	padding-left: 0px;
+	font-family: 'Open Sans', sans-serif;
+	color: #454141;
+	background-color: #EDEEF0;
 }
 
 a {
 	text-decoration: none;
-	transition: color;
-	transition-duration: 400ms;
-	-webkit-transition: color;
-	-webkit-transition-duration: 400ms;
-	-moz-transition: color;
-	-moz-transition-duration: 400ms;
-	-o-transition: color; 
-	-o-transition-duration: 400ms;
+	color: #454141;
 }
 
-a:hover {
-	text-decoration: none;
-	transition: color, text-shadow;
-	transition-duration: 200ms;
-	-webkit-transition: color, text-shadow;
-	-webkit-transition-duration: 200ms;
-	-moz-transition: color, text-shadow;
-	-moz-transition-duration: 200ms;
-	-o-transition: color, text-shadow;
-	-o-transition-duration: 200ms;
-}
-
-.text  a {
-	display: block;
-}
-
-.code {
-	max-width: 690px;
-	margin: 5px;
-	padding: 10px;
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 5px;
-}
-
-#content {
-	padding: 15px;
-	color: #222222;
-	font-size: 13px;
-}
-
-#content hr {
-	margin: 10px 0 10px 0;
-}
-
-#footer, #push{
-	height: 50px; /* .push must be the same height as .footer */
+h2 {
+	color: #222;
+	font-weight: 700;
+	font-size: 30px;
 	padding: 0;
+	margin: 0;
 }
 
-#footerText {
+ul {
+	list-style: none;
+	margin: 0;
 	padding: 15px;
 }
 
-.title {
-	font-family: EasonPro, Times New Roman, serif;
-	font-size: 15px;
-	font-weight: bold;
-}
-
-.signature {
-	font-family: 'Marck Script', cursive;
-	font-size: 17px;
-}
-
-/* Just for roster list */
-#content ul li {
+#sidebar {
 	display: block;
+	position: fixed;
+	float: left;
+	width: 160px;
+	height: 100%;
+	border-right: 1px dotted #ccc;
 }
 
-/* Color override for quick styling */
-body {
-	background-color: #EDEEF0;
-	/*background-color: #6d695c;
-	background-image:
-	repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-	repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-	background-size: 70px 120px;*/
+#sidebar .title,
+#sidebar .web,
+#sidebar .ruby {
+	border-bottom: 1px dotted #ccc;
 }
 
-#header, #footer, #wrapper, .code {
-	-moz-box-shadow: 0px 0px 5px 0px #454141;
-	-webkit-box-shadow: 0px 0px 5px 0px #454141;
-	box-shadow: 0px 0px 5px 0px #454141;
+#sidebar .title  {
+	font-size: 35px;
 }
 
-#header, #footer {
-	background-color: #454141;
-	color: #E1DEE5;
+#sidebar a {
+	display: block;
+	margin: 15px;
 }
 
-#wrapper  {
-	background-color: #E1DEE5;
+#sidebar a:hover {
+	color: #a16a71;
 }
 
-#content {
-	color: #454141;
+#head,
+.section {
+	width: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 15%;
+	padding-left: 15%;
+	margin-left: 161px;
+	text-align: center;
+	
+	font-weight: 600;
+	font-size: 18px;
+	color: #444;
+	border-bottom: 1px dotted #ccc;
 }
 
-a {
-	color: #E1DEE5;
+.section .links a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #888;
+	padding: 8px;
+	margin: 4px;
 }
 
-a:hover {
-	text-shadow: 0 0 6px #E1DEE5;
+.section .links a:hover {
+	color: #a16a71;
 }
 
-#content a {
-	color: #454141;
+.section .links {
+	margin-top: 30px;
 }
 
-#content a:hover {
-	text-shadow: 0 0 6px #454141;
+.section img {
+	display: block;
+	max-width: 80%;
+	margin: 0 auto;
+	margin-top: 30px;
+
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.25);
+	border: 1px solid transparent;
 }
 
-.code {
-	background-color: #EDEEF0;
-	border-color: #454141;
+.section img:hover {
+	border: 1px solid #a16a71;
+	color: #a16a71;
+}
+
+/* Animations */
+#sidebar a,
+#sidebar a:hover,
+.section .links a,
+.section .links a:hover,
+.section img,
+.section img:hover {
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+}
