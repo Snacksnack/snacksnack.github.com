@@ -6,7 +6,7 @@ html, body {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: #454141;
+	color: #292929;
 	background-color: #EDEEF0;
 }
 
@@ -16,7 +16,6 @@ a {
 }
 
 h2 {
-	color: #222;
 	font-weight: 700;
 	font-size: 30px;
 	padding: 0;
@@ -39,8 +38,7 @@ ul {
 }
 
 #sidebar .title,
-#sidebar .web,
-#sidebar .ruby {
+#sidebar .group {
 	border-bottom: 1px dotted #ccc;
 }
 
@@ -51,10 +49,6 @@ ul {
 #sidebar a {
 	display: block;
 	margin: 15px;
-}
-
-#sidebar a:hover {
-	color: #a16a71;
 }
 
 #head,
@@ -82,6 +76,7 @@ ul {
 	margin: 4px;
 }
 
+#sidebar a:hover,
 .section .links a:hover {
 	color: #a16a71;
 }
