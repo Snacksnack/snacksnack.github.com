@@ -1,3 +1,4 @@
+/* Main */
 html, body {
 	height: 100%;
 	margin: 0;
@@ -8,6 +9,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	color: #292929;
 	background-color: #EDEEF0;
+	font-weight: 400;
 }
 
 a {
@@ -28,6 +30,7 @@ ul {
 	padding: 15px;
 }
 
+/* Sidebar */
 #sidebar {
 	display: block;
 	position: fixed;
@@ -51,6 +54,7 @@ ul {
 	margin: 15px;
 }
 
+/* Content */
 #head,
 .section {
 	width: auto;
@@ -76,13 +80,9 @@ ul {
 	margin: 4px;
 }
 
-#sidebar a:hover,
+#sidebar a:hover, /* Part of sidebar */
 .section .links a:hover {
 	color: #a16a71;
-}
-
-.section .links {
-	margin-top: 30px;
 }
 
 .section img {
@@ -90,6 +90,7 @@ ul {
 	max-width: 80%;
 	margin: 0 auto;
 	margin-top: 30px;
+	margin-bottom: 30px;
 
 	box-shadow: 0px 1px 5px rgba(0,0,0,0.25);
 	border: 1px solid transparent;
