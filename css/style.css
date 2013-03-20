@@ -8,7 +8,7 @@ html, body {
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #292929;
-	background-color: #EDEEF0;
+	background-color: #f9f9fa;
 	font-weight: 400;
 }
 
@@ -97,8 +97,8 @@ ul {
 }
 
 .section img:hover {
+	box-shadow: 0px 1px 5px #a16a71;
 	border: 1px solid #a16a71;
-	color: #a16a71;
 }
 
 /* Animations */
