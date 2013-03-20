@@ -1,3 +1,16 @@
+/*
+ * Made by: Snack'
+ * Last edit: 20/02/2013 11:26 +0100
+ * 
+ * Font:				Open Sans
+ * Text-Color: 			#292929
+ * Anchor-Color: 		#454141
+ * Hover-Color: 		#a16a71
+ * Non-Hover:			rgba(0,0,0,0.25)
+ * Background-Color:	#f9f9fa
+ */
+
+
 /* Main */
 html, body {
 	height: 100%;
@@ -93,7 +106,7 @@ ul {
 	margin-bottom: 30px;
 
 	box-shadow: 0px 1px 5px rgba(0,0,0,0.25);
-	border: 1px solid transparent;
+	border: 1px solid rgba(0,0,0,0.25);
 }
 
 .section img:hover {
