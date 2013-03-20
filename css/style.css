@@ -1,6 +1,6 @@
 /*
  * Made by: Snack'
- * Last edit: 20/02/2013 11:26 +0100
+ * Last edit: 20/02/2013 11:47 +0100
  * 
  * Font:				Open Sans
  * Text-Color: 			#292929
@@ -28,6 +28,10 @@ body {
 a {
 	text-decoration: none;
 	color: #454141;
+}
+
+a:hover {
+	text-shadow: 0px 0px 1px #a16a71;
 }
 
 h2 {
