@@ -3,11 +3,17 @@
  * Last edit: 20/02/2013 11:47 +0100
  * 
  * Font:				Open Sans
- * Text-Color: 			#292929
- * Anchor-Color: 		#454141
- * Hover-Color: 		#a16a71
- * Non-Hover:			rgba(0,0,0,0.25)
- * Background-Color:	#f9f9fa
+ * 
+ * Text 			#292929
+ * Anchor			#454141
+ * Hover			#a16a71
+ * Non-Hover		rgba(0,0,0,0.25)
+ * Border			#ccc
+ * 
+ * Content			#444
+ * Content > Anchor	#888
+ * 
+ * Background		#f9f9fa
  */
 
 
