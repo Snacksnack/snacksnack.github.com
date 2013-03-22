@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#myCanvas").fadeOut(1e3, function () {
+    $("#myCanvas").fadeOut(500, function () {
     	$("#myCanvas").tagcanvas({
             textFont: "'Open Sans', sans-serif",
             textColour: "#444",
@@ -24,8 +24,8 @@ $(document).ready(function () {
             pulsateTime: 0.5,
             wheelZoom: false
         }, "tags")
-    	$("#myCanvas").fadeIn(2500);
+    	$("#myCanvas").fadeIn(1000);
 	}).error(function () {
-		$("#error").fadeIn(1e3)
+		$("#error").fadeIn(1000)
 	})
 });

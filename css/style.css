@@ -155,6 +155,6 @@ a:hover,
 	text-align: center;
 }
 
-#error, #tags, #myCanvas {
+#error, #tags {
 	display: none;
 }
