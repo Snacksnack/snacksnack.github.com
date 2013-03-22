@@ -2,7 +2,7 @@
  * Made by: Snack'
  * Last edit: 20/02/2013 11:47 +0100
  * 
- * Font:				Open Sans
+ * Font:			Open Sans
  * 
  * Text 			#292929
  * Anchor			#454141
@@ -38,6 +38,7 @@ a {
 
 a:hover {
 	text-shadow: 0px 0px 1px #a16a71;
+	color: #a16a71;
 }
 
 h2 {
@@ -125,6 +126,8 @@ ul {
 }
 
 /* Animations */
+a,
+a:hover,
 #sidebar a,
 #sidebar a:hover,
 .section .links a,
@@ -134,4 +137,24 @@ ul {
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
+}
+
+/* Cloud */
+#myCanvas, .frontpage #title {
+	position: absolute;
+    top: 10px; bottom:0; left: 0; right:0;
+    margin: auto;
+}
+
+#myCanvas {
+	margin-top: 50px;
+}
+
+.frontpage #title {
+	font-size: 35px;
+	text-align: center;
+}
+
+#error, #tags, #myCanvas {
+	display: none;
 }
