@@ -78,6 +78,13 @@ ul {
 	margin: 15px;
 }
 
+#sidebar .foot {
+	position: absolute;
+	bottom: 0;
+	width: 160px; /* Sidebar width */
+	border-top: 1px dotted #ccc;
+}
+
 /* Content */
 #head,
 .section {
