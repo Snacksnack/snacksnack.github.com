@@ -19,9 +19,6 @@ $(document).ready(function () {
             imageScale: null,
             shuffleTags: true,
             shape: "sphere",
-            lock: "",
-            pulsateTo: 0.2,
-            pulsateTime: 0.5,
             wheelZoom: false
         }, "tags")
     	$("#myCanvas").fadeIn(1000);
