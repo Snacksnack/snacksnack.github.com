@@ -2,23 +2,25 @@
  * Author: 73 6E 61 63 6B 27 
  * Last edit: 03/04/2013 15:55 +0100
  * 
- * Font:			Open Sans
+ * Font				Open Sans
  * 
- * Text 			#292929
- * Selection		#ccc
- * Anchor			#454141
- * Hover			#a16a71
- * Non-Hover		rgba(0,0,0,0.25)
- * Border			#ccc
+ * Colorscheme		design-seeds.com/index.php/home/entry/bunny-tones1
  * 
- * Content			#444
- * Content > Anchor	#888
+ * Text 			#37383d
+ * Selection		#e6dad6
+ * Anchor			#37383d
+ * Hover			#b88d8c
+ * Non-Hover		#7d7164
+ * Border			#e6dad6
  * 
- * Background		#f9f9fa
+ * Content			#7d7164
+ * Content > Anchor	#b3a196
+ * 
+ * Background		#faf6f0
  * Background Text	rgba(0,0,0,.5)
  * 
  * Overlay			rgba(0,0,0,.4)
- * Overlay Border	rgba(0,0,0,.25)
+ * Overlay Border	#e6dad6
  */
 
 /* Main */
@@ -30,20 +32,20 @@ html, body {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: #292929;
-	background-color: #f9f9fa;
+	color: #37383d;
+	background-color: #faf6f0;
 	font-weight: 400;
 	overflow-x: hidden;
 }
 
 a {
 	text-decoration: none;
-	color: #454141;
+	color: #37383d;
 }
 
 a:hover {
-	text-shadow: 0px 0px 1px #a16a71;
-	color: #a16a71;
+	text-shadow: 0px 0px 1px #b88d8c;
+	color: #b88d8c;
 }
 
 h2 {
@@ -61,15 +63,15 @@ ul {
 
 /* Text Selection */
 ::selection {
-	background-color: #ccc;
+	background-color: #e6dad6;
 }
 
 ::-moz-selection{
-	background-color: #ccc;
+	background-color: #e6dad6;
 }
 
 ::-webkit-selection {
-	background-color: #ccc;
+	background-color: #e6dad6;
 }
 
 /* Sidebar */
@@ -79,12 +81,12 @@ ul {
 	float: left;
 	width: 160px;
 	height: 100%;
-	border-right: 1px dotted #ccc;
+	border-right: 1px dotted #e6dad6;
 }
 
 #sidebar .title,
 #sidebar .group {
-	border-bottom: 1px dotted #ccc;
+	border-bottom: 1px dotted #e6dad6;
 }
 
 #sidebar .title  {
@@ -100,7 +102,7 @@ ul {
 	position: absolute;
 	bottom: 0;
 	width: 160px; /* Sidebar width */
-	border-top: 1px dotted #ccc;
+	border-top: 1px dotted #e6dad6;
 }
 
 /* Background code */
@@ -138,22 +140,22 @@ ul {
 	
 	font-weight: 600;
 	font-size: 18px;
-	color: #444;
-	border-bottom: 1px dotted #ccc;
+	color: #37383d;
+	border-bottom: 1px dotted #e6dad6;
 }
 
 .section .links a {
 	text-decoration: none;
 	font-size: 16px;
 	font-weight: 600;
-	color: #888;
+	color: #b3a196;
 	padding: 8px;
 	margin: 4px;
 }
 
 #sidebar a:hover, /* Part of sidebar */
 .section .links a:hover {
-	color: #a16a71;
+	color: #b88d8c;
 }
 
 .section img {
@@ -163,13 +165,13 @@ ul {
 	margin-top: 30px;
 	margin-bottom: 30px;
 
-	box-shadow: 0px 1px 5px rgba(0,0,0,0.25);
-	border: 1px solid rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 5px #7d7164;
+	border: 1px solid #7d7164;
 }
 
 .section img:hover {
-	box-shadow: 0px 1px 5px #a16a71;
-	border: 1px solid #a16a71;
+	box-shadow: 0px 0px 5px #b88d8c;
+	border: 1px solid #b88d8c;
 }
 
 /* Animations */
@@ -201,5 +203,5 @@ a:hover,
 	max-width: 90%;
 	max-height: 90%;
 	cursor: pointer;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 10px #7d7164;
 }
