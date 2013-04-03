@@ -1,6 +1,6 @@
 /*
  * Author: 73 6E 61 63 6B 27 
- * Last edit: 03/04/2013 19:56 +0100
+ * Last edit: 03/04/2013 21:56 +0100
  * 
  * Font				Open Sans
  * 
@@ -34,7 +34,6 @@ body {
 	color: #37383d;
 	background-color: #faf6f0;
 	font-weight: 400;
-	overflow-x: hidden;
 }
 
 a {
