@@ -1,6 +1,6 @@
 /*
  * Made by: Snack'
- * Last edit: 20/02/2013 11:47 +0100
+ * Last edit: 03/04/2013 11:26 +0100
  * 
  * Font:			Open Sans
  * 
@@ -14,6 +14,7 @@
  * Content > Anchor	#888
  * 
  * Background		#f9f9fa
+ * Background Text	rgba(0,0,0,.5)
  */
 
 
@@ -85,15 +86,38 @@ ul {
 	border-top: 1px dotted #ccc;
 }
 
+/* Background code */
+#content-wrapper, #content-wrapper:after {
+	width: auto;
+	height: 100%;
+	margin-left: 161px;
+}
+
+#content-wrapper:after {
+  	color: rgba(0,0,0,.05);
+  	content: attr(data-code);
+  	font-size: 20px;
+  	font-family: monospace;
+  	left: 0;
+  	position: absolute;
+  	top: 50px;
+  	left: 100px;
+  	white-space: pre;
+  	transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-webkit-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	z-index: -1;
+}
+
 /* Content */
 #head,
 .section {
-	width: auto;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	padding-right: 15%;
 	padding-left: 15%;
-	margin-left: 161px;
 	text-align: center;
 	
 	font-weight: 600;
@@ -144,24 +168,4 @@ a:hover,
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
-}
-
-/* Cloud */
-#myCanvas, .frontpage #title {
-	position: absolute;
-    top: 10px; bottom:0; left: 0; right:0;
-    margin: auto;
-}
-
-#myCanvas {
-	margin-top: 50px;
-}
-
-.frontpage #title {
-	font-size: 35px;
-	text-align: center;
-}
-
-#error, #tags {
-	display: none;
 }
