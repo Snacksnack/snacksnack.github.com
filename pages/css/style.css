@@ -1,10 +1,11 @@
 /*
- * Made by: Snack'
- * Last edit: 03/04/2013 11:26 +0100
+ * Author: 73 6E 61 63 6B 27 
+ * Last edit: 03/04/2013 15:55 +0100
  * 
  * Font:			Open Sans
  * 
  * Text 			#292929
+ * Selection		#ccc
  * Anchor			#454141
  * Hover			#a16a71
  * Non-Hover		rgba(0,0,0,0.25)
@@ -15,8 +16,10 @@
  * 
  * Background		#f9f9fa
  * Background Text	rgba(0,0,0,.5)
+ * 
+ * Overlay			rgba(0,0,0,.4)
+ * Overlay Border	rgba(0,0,0,.25)
  */
-
 
 /* Main */
 html, body {
@@ -53,6 +56,19 @@ ul {
 	list-style: none;
 	margin: 0;
 	padding: 15px;
+}
+
+/* Text Selection */
+::selection {
+	background-color: #ccc;
+}
+
+::-moz-selection{
+	background-color: #ccc;
+}
+
+::-webkit-selection {
+	background-color: #ccc;
 }
 
 /* Sidebar */
@@ -168,4 +184,22 @@ a:hover,
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
+}
+
+/* Overlay */
+#overlay-wrapper {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.4);
+}
+
+#overlay-wrapper img {
+	display: block;
+	max-width: 90%;
+	max-height: 90%;
+	cursor: pointer;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.25);
 }
