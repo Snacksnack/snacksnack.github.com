@@ -1,6 +1,6 @@
 /*
  * Author: 73 6E 61 63 6B 27 
- * Last edit: 03/04/2013 15:55 +0100
+ * Last edit: 03/04/2013 19:56 +0100
  * 
  * Font				Open Sans
  * 
@@ -17,7 +17,6 @@
  * Content > Anchor	#b3a196
  * 
  * Background		#faf6f0
- * Background Text	rgba(0,0,0,.5)
  * 
  * Overlay			rgba(0,0,0,.4)
  * Overlay Border	#e6dad6
@@ -105,33 +104,11 @@ ul {
 	border-top: 1px dotted #e6dad6;
 }
 
-/* Background code */
-#content-wrapper, #content-wrapper:after {
-	width: auto;
-	height: 100%;
-	margin-left: 161px;
-}
-
-#content-wrapper:after {
-  	color: rgba(0,0,0,.05);
-  	content: attr(data-code);
-  	font-size: 20px;
-  	font-family: monospace;
-  	position: absolute;
-  	top: 50px;
-  	left: 100px;
-  	white-space: pre;
-  	transform: rotate(-5deg);
-	-ms-transform: rotate(-5deg);
-	-moz-transform: rotate(-5deg);
-	-webkit-transform: rotate(-5deg);
-	-o-transform: rotate(-5deg);
-	z-index: -1;
-}
-
 /* Content */
 #head,
 .section {
+	width: auto;
+	margin-left: 161px; /* Sidebar width + sidebar border width */
 	padding-top: 5%;
 	padding-bottom: 5%;
 	padding-right: 15%;
