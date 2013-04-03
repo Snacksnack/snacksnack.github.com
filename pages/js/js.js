@@ -7,10 +7,8 @@ $(document).ready(function() {
 		dataType: "jsonp",
 		crossDomain: true,
 		success: function(response){
-			console.log(response.data.content);
 			var code = Base64.decode(response.data.content);
 			$('#wrapper').attr('data-code', code);
-			console.log(code);
 		}
 	});
 });
