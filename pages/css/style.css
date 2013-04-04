@@ -163,7 +163,7 @@ ul {
 	font: 14px monospace;
 	text-decoration: underline;
 	margin-top: -5px;
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .black {
@@ -195,7 +195,7 @@ ul {
 }
 
 .thick {
-	font-weight:700
+	font-weight: 700;
 }
 
 /* Animations */
