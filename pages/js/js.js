@@ -16,7 +16,7 @@ $(document).ready(function() {
     }
     
     // Add listener to overlay to close it
-    $('#overlay-wrapper').click(function(e) {
+    $('#overlay-wrapper').click(function() {
     	$('body').css({ overflow: 'visible' })
     	$(this).fadeOut(5e2);
     });
