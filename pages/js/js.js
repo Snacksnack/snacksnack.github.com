@@ -32,6 +32,7 @@ $(document).ready(function() {
     var clExpand = "(Click to expand)";
     var clCollapse = "(Click to minify)";
     
+    // Add listeners to the code block titles to show/hide the code
     var codeBlocks = $('.code-wrapper');
     if (codeBlocks.children('.code-title').length && codeBlocks.children('.code').length) {
     	codeBlocks.each(function() {
