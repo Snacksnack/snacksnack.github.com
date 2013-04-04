@@ -32,43 +32,25 @@ $(document).ready(function() {
     var clExpand = "(Click to expand)";
     var clCollapse = "(Click to minify)";
     
-    // Hide code block
-    $('#cc-1').hide();
-    $('#cc-2').hide();
-    
-    // Set code labels
-	$('#cl-1').html(clExpand);
-	$('#cl-2').html(clExpand);
-	
-    // Show code labels
-    $('#cl-1').show();
-    $('#cl-2').show();
-    
-    // Change pointer
-    $('#code-1').css('cursor', 'pointer');
-    $('#code-2').css('cursor', 'pointer');
-    
-    // Toggle code blocks
-    $('#code-1').click(function() {
-		$('#cl-1').fadeOut('fast');
-    	$('#cc-1').slideToggle('slow', function() {
-    		if ($('#cl-1').html() == clExpand) {
-	    		$('#cl-1').html(clCollapse);
-	    	} else {
-	    		$('#cl-1').html(clExpand);
-	    	}
-    		$('#cl-1').fadeIn('slow');
-    	});
-    });
-    $('#code-2').click(function() {
-		$('#cl-2').fadeOut('fast');
-    	$('#cc-2').slideToggle('slow', function() {
-	    	if ($('#cl-2').html() == clExpand) {
-	    		$('#cl-2').html(clCollapse);
-	    	} else {
-	    		$('#cl-2').html(clExpand);
-	    	}
-    		$('#cl-2').fadeIn('slow');
-    	});
-    });
+    var codeBlocks = $('.code-wrapper');
+    if (codeBlocks.children('.code-title').length && codeBlocks.children('.code').length) {
+    	codeBlocks.each(function() {
+        	$(this).children('.code').hide();
+    		$(this).children('.code-title').css('cursor', 'pointer');
+        	$(this).children('.code-title').children('.code-label').html(clExpand).show();
+        });
+    	codeBlocks.children('.code-title').click(function(e) {
+                e.preventDefault();
+                var codeLabel = $(this).children('.code-label');
+                codeLabel.fadeOut('fast');
+                $(this).parent().children('.code').slideToggle('slow', function() {
+                	if (codeLabel.html() == clExpand) {
+                		codeLabel.html(clCollapse);
+        	    	} else {
+        	    		codeLabel.html(clExpand);
+        	    	}
+                	codeLabel.fadeIn('slow');
+                });
+        });
+    }
 });
