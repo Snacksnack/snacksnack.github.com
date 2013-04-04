@@ -159,42 +159,42 @@ ul {
 	border: 1px solid #b3a196;
 }
 
-.code-title {
+.code .code-title {
 	font: 14px monospace;
 	text-decoration: underline;
 	margin-top: -5px;
 	margin-bottom: 10px;
 }
 
-.black {
+.code .black {
 	color: #073642;
 }
 
-.green {
+.code .green {
 	color: #859900;
 }
 
-.yellow {
+.code .yellow {
 	color: #b58900;
 }
 
-.cyan {
+.code .cyan {
 	color: #269186;
 }
 
-.pink {
+.code .pink {
 	color: #d33682;
 }
 
-.red {
+.code .red {
 	color: #c60000;
 }
 
-.orange-red {
+.code .orange-red {
 	color: #cb4b16;
 }
 
-.thick {
+.code .thick {
 	font-weight: 700;
 }
 
