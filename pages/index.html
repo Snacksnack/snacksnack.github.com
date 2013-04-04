@@ -36,8 +36,9 @@
 				<a href='#bblean'>bbLean</a>
 				<a href='#console'>Console2</a>
 			</div>
-			<div class="foot">
-				<a href="https://www.youtube.com/watch?v=QH2-TGUlwu4">Copypasta</a>
+			<div class="contact">
+				<a href="https://twitter.com/#!/snackdev"><img src="img/twitter.png"/>@SnackDev</a>
+				<a href="skype:s.snack93?chat"><img src="img/skype.png"/>S.Snack93</a>
 			</div>
 		</div>
 		
@@ -118,6 +119,37 @@
 			<div class="section">
 				<h2 id="ircbot">Ircbot</h2>
 				Ircbot, written in java. It has extensive features and tries to be a backup for others.
+<div class="code"><div class="code-title black thick">Functions config snippet</div>"functions": {
+	"greet": {
+		"enabled": "<span class="red">false</span>",
+		"visible": "<span class="cyan">public</span>"
+	},
+	"html":	     "<span class="green">true</span>",
+	"lastfm":    "<span class="green">true</span>",
+	"weather":   "<span class="green">true</span>",
+	"quote":     "<span class="green">true</span>",
+	"tell":      "<span class="green">true</span>",
+	"translate": "<span class="red">false</span>",
+	"romaji":    "<span class="red">false</span>",
+	"search": {
+		"enabled": "<span class="green">true</span>",
+		"default": "<span class="cyan">g</span>"
+	}
+}</div>
+<div class="code"><div class="code-title black thick">Databasemanager snippet</div><span class="black thick">private Mongo</span> mongo;
+<span class="black thick">private</span> <span class="orange-red">DB</span> db;
+<span class="black thick">private DBCollection</span> weather_collection, lastfm_collection, quote_collection, tell_collection;
+                
+<span class="black thick">private static DatabaseManager</span> instance <span class="green">=</span> <span class="yellow">null</span>;
+                
+<span class="black thick">public static DatabaseManager</span> getInstance() {
+    <span class="green">if</span> (instance <span class="green">==</span> <span class="yellow">null</span>) {
+        <span class="black thick">Monitor</span><span class="green">.</span>print(<span class="cyan"><span class="red">"</span>~INFO Initializing database<span class="red">"</span></span>);
+        instance <span class="green">=</span> <span class="green">new</span> <span class="black thick">DatabaseManager</span>();
+        <span class="black thick">Monitor</span><span class="green">.</span>print(<span class="cyan"><span class="red">"</span>~INFO Initialized database<span class="red">"</span></span>);
+    }
+    <span class="green">return</span> instance;
+}</div>
 				<div class="links">
 					<a href="https://github.com/Snacksnack/IrcBot/tree/master/IrcBot">Repository</a>
 				</div>

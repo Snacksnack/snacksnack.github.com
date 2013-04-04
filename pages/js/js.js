@@ -8,18 +8,16 @@ $(document).ready(function() {
         imageLinks.click(function(e) {
                 e.preventDefault();
                 $('#overlay-wrapper img').attr('src', $(this).context);
-                $('#overlay-wrapper img').load(function() {
-                	$("body").css({ overflow: 'hidden' })
-	                $('#overlay-wrapper').fadeIn(5e2);
-	                $(this).attr('title', 'Click anywhere to close');
-	                $('#overlay-wrapper img').css( { "margin-left" : ($(window).width()-$('#overlay-wrapper img').width())/2, "margin-top" : ($(window).height()-$('#overlay-wrapper img').height())/2 } )
-                });
+                $('body').css({ overflow: 'hidden' })
+	            $('#overlay-wrapper').fadeIn(5e2);
+	            $('#overlay-wrapper img').attr('title', 'Click anywhere to close');
+	            $('#overlay-wrapper img').css( { 'margin-left' : ($(window).width()-$('#overlay-wrapper img').width())/2, 'margin-top' : ($(window).height()-$('#overlay-wrapper img').height())/2 } )
         });
     }
     
     // Add listener to overlay to close it
     $('#overlay-wrapper').click(function(e) {
-    	$("body").css({ overflow: 'visible' })
+    	$('body').css({ overflow: 'visible' })
     	$(this).fadeOut(5e2);
     });
 });
