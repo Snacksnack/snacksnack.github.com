@@ -3,6 +3,9 @@
  * Last edit: 04/04/2013 15:22 +0100
  */
 $(document).ready(function() {
+	// Hide the javascript notice
+	$('#notice').hide();
+	
 	// Add listeners to image anchors to open the overlay
 	var imageLinks = $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]');
     if (imageLinks.children('img').length) {
@@ -30,8 +33,8 @@ $(document).ready(function() {
     var clCollapse = "(Click to minify)";
     
     // Hide code block
-    $('#cc-1').css('display', 'none');
-    $('#cc-2').css('display', 'none');
+    $('#cc-1').hide();
+    $('#cc-2').hide();
     
     // Set code labels
 	$('#cl-1').html(clExpand);
