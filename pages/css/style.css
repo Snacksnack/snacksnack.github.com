@@ -1,7 +1,7 @@
 @charset="utf-8";
 /*
  * Author: 73 6E 61 63 6B 27 
- * Last edit: 04/04/2013 11:59 +0100
+ * Last edit: 04/04/2013 15:18 +0100
  */
 
 /* Main */
@@ -141,18 +141,16 @@ ul {
 }
 
 /* Code Blocks */
-.code {
+.code-wrapper {
 	display: block;
 	max-width: 70%;
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	padding: 15px 15px 13px 15px;
 	
 	font-family: 'Source Code Pro', sans-serif;
 	font-size: 12px;
 	line-height: 1.2em;
-	white-space: pre-wrap;
 	text-align: left;
 	
 	color: #586e75;
@@ -161,49 +159,59 @@ ul {
 	border: 1px solid #b3a196;
 }
 
-.code .code-title {
-	font-size: 13px;
-	border-bottom: 1px solid #b3a196;
-	/* negative .code padding */
-	margin-left: -15px;
-	margin-right: -15px;
-	margin-top: -5px;
-	margin-bottom: 10px;
-	/* new padding */
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 10px;
+.code-wrapper .code-title, .code-wrapper .code {
+	padding: 15px;
+	white-space: pre-wrap;
 }
 
-.code .black {
+.code-wrapper .code-title {
+	margin: 0;
+	font-size: 13px;
+}
+
+.code-wrapper .code-title .code-label {
+	display: none;
+	float: right;
+}
+
+.code-wrapper .code {
+	border-top: 1px solid #b3a196;
+}
+
+.code-wrapper .code .noborder { /* For code blocks with no title */
+	border-top: none;
+}
+
+/* Colors */
+.black {
 	color: #073642;
 }
 
-.code .green {
+.green {
 	color: #859900;
 }
 
-.code .yellow {
+.yellow {
 	color: #b58900;
 }
 
-.code .cyan {
+.cyan {
 	color: #269186;
 }
 
-.code .pink {
+.pink {
 	color: #d33682;
 }
 
-.code .red {
+.red {
 	color: #c60000;
 }
 
-.code .orange-red {
+.orange-red {
 	color: #cb4b16;
 }
 
-.code .thick {
+.thick {
 	font-weight: 700;
 }
 
@@ -223,6 +231,13 @@ a:hover,
 	-webkit-transition: all 0.3s ease 0s;
 }
 
+#overlay-wrapper img,
+#overlay-wrapper img:hover {
+	transition: box-shadow 0.3s ease 0s, border 0.3s ease 0s;
+	-moz-transition: box-shadow 0.3s ease 0s, border 0.3s ease 0s;
+	-webkit-transition: box-shadow 0.3s ease 0s, border 0.3s ease 0s;
+}
+
 /* Overlay */
 #overlay-wrapper {
 	display: none;
@@ -238,5 +253,12 @@ a:hover,
 	max-width: 90%;
 	max-height: 90%;
 	cursor: pointer;
+	
 	box-shadow: 0px 0px 10px #7d7164;
+	border: 1px solid #7d7164;
+}
+
+#overlay-wrapper img:hover {
+	box-shadow: 0px 0px 5px #b88d8c;
+	border: 1px solid #b88d8c;
 }

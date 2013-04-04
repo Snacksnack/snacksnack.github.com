@@ -121,7 +121,9 @@
 			<div class="section">
 				<h2 id="ircbot">Ircbot</h2>
 				Ircbot, written in java. It has extensive features and tries to be a backup for others.
-<div class="code"><div class="code-title black thick">Functions config snippet</div>"functions": {
+				<div class="code-wrapper">
+					<div id="code-1" class="code-title"><span class="black thick">Functions config snippet</span><span class="code-label" id="cl-1">*</span></div>
+<div id="cc-1" class="code">"functions": {
 	"greet": {
 		"enabled": "<span class="red">false</span>",
 		"visible": "<span class="cyan">public</span>"
@@ -138,7 +140,10 @@
 		"default": "<span class="cyan">g</span>"
 	}
 }</div>
-<div class="code"><div class="code-title black thick">Databasemanager snippet</div><span class="black thick">private Mongo</span> mongo;
+				</div>
+				<div class="code-wrapper">
+					<div id="code-2" class="code-title"><span class="black thick">Databasemanager snippet</span><span class="code-label" id="cl-2">*</span></div>
+<div id="cc-2" class="code"><span class="black thick">private Mongo</span> mongo;
 <span class="black thick">private</span> <span class="orange-red">DB</span> db;
 <span class="black thick">private DBCollection</span> weather_collection, lastfm_collection, quote_collection, tell_collection;
                 
@@ -152,6 +157,7 @@
     }
     <span class="green">return</span> instance;
 }</div>
+				</div>
 				<div class="links">
 					<a href="https://github.com/Snacksnack/IrcBot/tree/master/IrcBot">Repository</a>
 				</div>
