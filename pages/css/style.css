@@ -22,9 +22,14 @@ a {
 	color: #37383d;
 }
 
-a:hover, a.active {
+a:hover {
 	text-shadow: 0px 0px 1px #b88d8c;
 	color: #b88d8c;
+}
+
+a.active {
+	text-shadow: 0px 0px 1px #b3a196;
+	color: #b3a196;
 }
 
 h2 {
