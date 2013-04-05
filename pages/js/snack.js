@@ -68,7 +68,6 @@ $(document).ready(function() {
 		for (var i = 0; i < positions.length; i++) {
 			 $(pageAnchors[i]).removeClass('active');
 			var diff = Math.abs(positions[i].ofs - offset);
-			console.log(offset - positions[i].ofs);
 			if (diff < prev && (offset - positions[i].ofs) <= 50 ) {
 				prev = diff;
 		        closest = positions[i];
@@ -77,6 +76,9 @@ $(document).ready(function() {
 		}
 		$(pageAnchors[closestPos]).addClass('active');
 	});
+	
+	// Force a scroll
+	$(window).scrollTop($(window).scrollTop());
 });
 
 // Updates the anchor locations
@@ -88,5 +90,6 @@ function updatePositions() {
 		var pos = $(anchor).offset();
 		positions.push({'tag':anchor, 'ofs':pos.top});
 	});
+	// Force a scroll
 	$(window).scrollTop($(window).scrollTop());
 }
