@@ -123,8 +123,9 @@
 			<div class="section">
 				<h2 id="ircbot">Ircbot</h2>
 				Ircbot, written in java. It has extensive features and tries to be a backup for others.
-				<div class="code-wrapper">
-					<div class="code-title"><span class="black thick">Functions config snippet</span><span class="code-label">*</span></div>
+<!-- Code blocks are pre-wrap ergo; bad indentation. And the syntax highlighting is a span-fest. -->
+<div class="code-wrapper">
+<div class="code-title"><span class="black thick">Functions config snippet</span><span class="code-label">*</span></div>
 <div class="code">"functions": {
     "greet": {
         "enabled": "<span class="red">false</span>",
@@ -142,9 +143,10 @@
         "default": "<span class="cyan">g</span>"
     }
 }</div>
-				</div>
-				<div class="code-wrapper">
-					<div class="code-title"><span class="black thick">Databasemanager snippet</span><span class="code-label">*</span></div>
+</div>
+
+<div class="code-wrapper">
+<div class="code-title"><span class="black thick">Databasemanager snippet</span><span class="code-label">*</span></div>
 <div id="cc-2" class="code"><span class="black thick">private Mongo</span> mongo;
 <span class="black thick">private</span> <span class="orange-red">DB</span> db;
 <span class="black thick">private DBCollection</span> weather_collection, lastfm_collection, quote_collection, tell_collection;
@@ -159,7 +161,44 @@
     }
     <span class="green">return</span> instance;
 }</div>
-				</div>
+</div>
+
+<div class="code-wrapper">
+<div class="code-title"><span class="black thick">HTMLGetter snippet</span><span class="code-label">*</span></div>
+<div class="code"><span class="grey">// Try to determine filesize/type/encoding</span>
+<span class="black thick">URL</span> url <span class="green">= new</span> <span class="black thick">URL</span>(urlString);
+<span class="black thick">URLConnection</span> conn <span class="green">=</span> url<span class="green">.</span>openConnection();
+conn<span class="green">.</span>setRequestProperty(<span class="cyan"><span class="red">"</span>User-Agent<span class="red">"</span></span>, <span class="cyan"><span class="red">"</span>Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.2.2) Gecko/20100316 Firefox/3.6.2<span class="red">"</span></span>);
+conn<span class="green">.</span>setReadTimeout(<span class="pink">10000</span>);
+<span class="black thick">int</span> size <span class="green">=</span> conn<span class="green">.</span>getContentLength();
+<span class="black thick">String</span> sizeString, output;
+<span class="black thick">double</span> filesize;
+<span class="green">if</span> (size <span class="green">&lt;=</span> <span class="pink">0</span>) {
+    output <span class="green">=</span> <span class="black thick">Config</span><span class="green">.</span>speech<span class="green">.</span>get(<span class="cyan"><span class="red">"</span>HT_SUC_SIZE0<span class="red">"</span></span>);
+} <span class="green">else</span> {
+    <span class="black thick">double</span> bytes <span class="green">=</span> <span class="black thick">Double</span><span class="green">.</span>valueOf(size);
+    <span class="black thick">double</span> kilobytes <span class="green">=</span> (bytes <span class="green">/</span> <span class="pink">1024</span>);
+    <span class="black thick">double</span> megabytes <span class="green">=</span> (kilobytes <span class="green">/</span> <span class="pink">1024</span>);
+    <span class="black thick">double</span> gigabytes <span class="green">=</span> (megabytes <span class="green">/</span> <span class="pink">1024</span>);
+
+    <span class="green">if</span> (kilobytes <span class="green">&lt;</span> <span class="pink">1</span>) {
+        sizeString <span class="green">=</span> <span class="cyan"><span class="red">"</span>B<span class="red">"</span></span>;
+        filesize <span class="green">=</span> bytes;
+    } <span class="green">else if</span> (megabytes <span class="green">&lt;</span> <span class="pink">1</span>) {
+        sizeString <span class="green">=</span> <span class="cyan"><span class="red">"</span>KiB<span class="red">"</span></span>;
+        filesize <span class="green">=</span> kilobytes;
+    } <span class="green">else if</span> (gigabytes <span class="green">&lt;</span> <span class="pink">1</span>) {
+        sizeString <span class="green">=</span> <span class="cyan"><span class="red">"</span>MiB<span class="red">"</span></span>;
+        filesize <span class="green">=</span> megabytes;
+    } <span class="green">else</span> {
+        sizeString <span class="green">=</span> <span class="cyan"><span class="red">"</span>GiB<span class="red">"</span></span>;
+        filesize <span class="green">=</span> gigabytes;
+    }
+
+    filesize <span class="green">= new</span> <span class="black thick">BigDecimal</span>(filesize)<span class="green">.</span>setScale(<span class="pink">2</span>, <span class="black thick">BigDecimal</span><span class="orange-red"><span class="green">.</span>ROUND_HALF_UP</span>)<span class="green">.</span>doubleValue();
+    output <span class="green">=</span> <span class="black thick">Config</span><span class="green">.</span>speech<span class="green">.</span>get(<span class="cyan"><span class="red">"</span>HT_SUC_!SIZE0<span class="red">"</span></span>)<span class="green">.</span>replace(<span class="cyan"><span class="red">"</span>&lt;size><span class="red">"</span></span>, <span class="black thick">Double</span><span class="green">.</span>toString(filesize))<span class="green">.</span>replace(<span class="cyan"><span class="red">"</span>&lt;format><span class="red">"</span></span>, sizeString);</div>
+</div>
+<!-- End of code blocks -->
 				<div class="links">
 					<a href="https://github.com/Snacksnack/IrcBot/tree/master/IrcBot">Repository</a>
 				</div>
