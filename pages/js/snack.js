@@ -2,7 +2,7 @@
  * Author: 73 6E 61 63 6B 27 
  * Last edit: 04/04/2013 15:22 +0100
  */
-$(document).ready(function() {
+$(document).ready(function() {	
 	// Hide the javascript notice
 	$('#notice').hide();
 	
@@ -52,6 +52,41 @@ $(document).ready(function() {
         	    	}
                 	codeLabel.fadeIn('slow');
                 });
+                updatePositions();
         });
     }
+    
+	// Updates the anchor locations
+    updatePositions();
+	
+	// Scrollhandler to light up closest tag
+	$(window).scroll(function() {
+		var offset = $(window).scrollTop();
+		var closest = positions[0];
+		var closestPos = 0;
+		var prev = Math.abs(closest.ofs - offset);
+		for (var i = 0; i < positions.length; i++) {
+			 $(pageAnchors[i]).removeClass('active');
+			var diff = Math.abs(positions[i].ofs - offset);
+			console.log(offset - positions[i].ofs);
+			if (diff < prev && (offset - positions[i].ofs) <= 50 ) {
+				prev = diff;
+		        closest = positions[i];
+		        closestPos = i;
+		    }
+		}
+		$(pageAnchors[closestPos]).addClass('active');
+	});
 });
+
+// Updates the anchor locations
+function updatePositions() {
+	pageAnchors = $('a[href^="#"]');
+	positions = [];
+	pageAnchors.each(function() {
+		var anchor = $(this).attr('href');
+		var pos = $(anchor).offset();
+		positions.push({'tag':anchor, 'ofs':pos.top});
+	});
+	$(window).scrollTop($(window).scrollTop());
+}
