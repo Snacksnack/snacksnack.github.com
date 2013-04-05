@@ -1,7 +1,6 @@
-@charset="utf-8";
 /*
  * Author: 73 6E 61 63 6B 27 
- * Last edit: 04/04/2013 15:18 +0100
+ * Last edit: 05/04/2013 11:36 +0100
  */
 
 /* Main */
@@ -206,7 +205,7 @@ ul {
 	border-top: none;
 }
 
-/* Colors */
+/* Colors (Based on Solarized Light) */
 .black {
 	color: #073642;
 }
