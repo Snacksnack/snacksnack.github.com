@@ -77,8 +77,8 @@ $(document).ready(function() {
 		$(pageAnchors[closestPos]).addClass('active');
 	});
 	
-	// Force a scroll
-	$(window).scrollTop(0);
+	// Highlight the top one
+	$(pageAnchors[0]).addClass('active');
 });
 
 // Updates the anchor locations
