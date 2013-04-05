@@ -61,24 +61,18 @@ $(document).ready(function() {
 	
 	// Scrollhandler to light up closest tag
 	$(window).scroll(function() {
-		var offset = $(window).scrollTop();
-		var closest = positions[0];
-		var closestPos = 0;
-		var prev = Math.abs(closest.ofs - offset);
-		for (var i = 0; i < positions.length; i++) {
-			 $(pageAnchors[i]).removeClass('active');
-			var diff = Math.abs(positions[i].ofs - offset);
-			if (diff < prev && (offset - positions[i].ofs) <= 50 ) {
-				prev = diff;
-		        closest = positions[i];
-		        closestPos = i;
-		    }
-		}
-		$(pageAnchors[closestPos]).addClass('active');
+		// Updates which tag is highlighted
+		updateHighlight();
 	});
 	
 	// Highlight the top one
 	$(pageAnchors[0]).addClass('active');
+	
+	// Reload positions on resize
+	$(window).resize(function(){
+		updatePositions();
+		updateHighlight();
+    });
 });
 
 // Updates the anchor locations
@@ -90,4 +84,22 @@ function updatePositions() {
 		var pos = $(anchor).offset();
 		positions.push({'tag':anchor, 'ofs':pos.top});
 	});
+}
+
+// Updates which tag is highlighted
+function updateHighlight() {
+	var offset = $(window).scrollTop();
+	var closest = positions[0];
+	var closestPos = 0;
+	var prev = Math.abs(closest.ofs - offset);
+	for (var i = 0; i < positions.length; i++) {
+		 $(pageAnchors[i]).removeClass('active');
+		var diff = Math.abs(positions[i].ofs - offset);
+		if (diff < prev && (offset - positions[i].ofs) <= 50 ) {
+			prev = diff;
+	        closest = positions[i];
+	        closestPos = i;
+	    }
+	}
+	$(pageAnchors[closestPos]).addClass('active');
 }
