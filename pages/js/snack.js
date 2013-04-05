@@ -78,7 +78,7 @@ $(document).ready(function() {
 	});
 	
 	// Force a scroll
-	$(window).scrollTop($(window).scrollTop());
+	$(window).scrollTop(0);
 });
 
 // Updates the anchor locations
@@ -90,6 +90,4 @@ function updatePositions() {
 		var pos = $(anchor).offset();
 		positions.push({'tag':anchor, 'ofs':pos.top});
 	});
-	// Force a scroll
-	$(window).scrollTop($(window).scrollTop());
 }
