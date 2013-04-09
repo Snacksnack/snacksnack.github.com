@@ -157,12 +157,12 @@ ul {
 	border: 1px solid #b88d8c;
 }
 
-.section .text-only {
+.text-only .links {
 	margin-top: 30px
 }
 
-.section .image-only,
-.section .code-only {
+.image-only .links,
+.code-only .links {
 	margin-bottom: 0px;
 }
 
