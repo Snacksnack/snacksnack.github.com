@@ -55,7 +55,8 @@ $(document).ready(function() {
                 updatePositions();
         });
     }
-    
+});
+    /*
 	// Updates the anchor locations
     updatePositions();
 	
@@ -102,4 +103,4 @@ function updateHighlight() {
 	    }
 	}
 	$(pageAnchors[closestPos]).addClass('active');
-}
+}*/
