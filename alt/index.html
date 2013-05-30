@@ -16,6 +16,17 @@
 
 	<body>
 	<header>
+		<div id="overlay-wrapper">
+			<div id="overlay-inner">
+				<ul>
+					<li id="overlay-inner-label">Test</li>
+					<li id="overlay-inner-close" title="Click to close">X</li>
+				</ul>
+			</div>
+			<img src=""/>
+		</div>
+
+
 	  <div class="inside">
 	    
 	    <a id="logo" href="/">Snack'</a>
@@ -43,13 +54,19 @@
 
 	<section>
 	  <div class="inside">
+
+		<div id="notice">
+			I use javascript only to enhance the page, not to track you.<br />
+			Don't trust me? Check the source: <a href="js/js.js">'js.js'</a>
+		</div>
+
 	    <h1>Welcome to my simple webpage, it features my projects, some stuff about me and contact info.</h1>
 
 	    <article id="works">
 	      <h2 class="entypo-picture"> &nbsp;Projects</h2>
 	      <section class="work">
 	        <h3>Startpage</h3>
-	        <a href="img/startpage.jpg"><img src="img/startpage.jpg"/></a>
+	        <a href="img/startpage.jpg" title="Startpage"><img src="img/startpage.jpg"/></a>
 	        <p>
 				Custom startpage, preferably used in firefox, not fully tested in other browsers.
 			</p>
@@ -60,7 +77,7 @@
 	      </section>
 	      <section class="work">
 	        <h3>UserChrome</h3>
-				<a href="img/userchrome.png"><img src="img/userchrome.png"/></a>
+				<a href="img/userchrome.png" title="UserChrome"><img src="img/userchrome.png"/></a>
 				<p>
 					Custom userChrome.css, only used in firefox and shouldn't require anything.<br />
 					Still very buggy, so I'm still working on it daily.<br />
@@ -72,7 +89,7 @@
 	      </section>
 	      <section class="work">
 	        <h3>Colors</h3>
-				<a href="img/colors.png"><img src="img/colors.png"/></a>
+				<a href="img/colors.png" title="Colors"><img src="img/colors.png"/></a>
 				<p>
 					Colors script, written in Ruby, supports table, list and custom colors.
 				</p>
@@ -82,7 +99,7 @@
 	      </section>
 	      <section class="work">
 	        <h3>Pastie</h3>
-				<a href="img/pastie.png"><img src="img/pastie.png"/></a>
+				<a href="img/pastie.png" title="Pastie"><img src="img/pastie.png"/></a>
 				<p>
 					Pastie script, posts files to pastie.org
 				</p>
@@ -92,7 +109,7 @@
 	      </section>
 	      <section class="work">
 	      	<h3>Fighters</h3>
-				<a href="img/fighters.png"><img src="img/fighters.png"/></a>
+				<a href="img/fighters.png" title="Fighters"><img src="img/fighters.png"/></a>
 				<p>
 					Ruby script, some weird fencers move from side to side while fighting and shouting insults at each other.<br />
 					Supports colors, speed, movement, and timer options.
@@ -170,7 +187,7 @@
 			</section>
 			<section class="work">
 				<h3>bbLean</h3>
-				<a href="img/bblean.png"><img src="img/bblean.png"/></a>
+				<a href="img/bblean.png" title="bbLean"><img src="img/bblean.png"/></a>
 				<p>
 					Light bbLean theme, based on bb_crim by apathyrecharge.<br />
 					Basically inverted his colors and removed the red.
@@ -181,7 +198,7 @@
 			</section>
 			<section class="work">
 				<h3>Console2</h3>
-				<a href="img/console.png"><img src="img/console.png"/></a>
+				<a href="img/console.png" title="Console2"><img src="img/console.png"/></a>
 				<p>
 					Console2 settings file, light colors and default paths set.<br />
 					Best used with an autorun.cmd and simple cmd.exe

@@ -323,3 +323,60 @@ footer ul li a:hover {
 .orange-red {
   color: #d35400;
 }
+
+/* Overlay */
+#overlay-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.4);
+}
+
+#overlay-wrapper img,
+#overlay-inner {
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+#overlay-wrapper img {
+  border: 5px solid #f7f7f7;
+  border-radius: 10px;
+}
+
+#overlay-inner {
+    margin: 0 auto;
+    margin-bottom: -30px;
+}
+
+#overlay-inner ul {
+  margin:; 0;
+  padding: 0;
+}
+
+#overlay-inner li {
+    display: inline-block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+    color: #fff;
+}
+
+#overlay-inner-close {
+  float: right;
+  cursor: pointer;
+}
+
+/* Javascript notice */
+#notice {
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 5px;
+  
+  font-size: 14px;
+  background: #e74c3c;
+  box-shadow: 0px 0px 5px #a16a71;
+  border: 1px solid #a16a71;
+}
