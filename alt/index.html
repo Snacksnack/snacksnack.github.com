@@ -4,7 +4,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
-		<title>Portfolio</title>
+		<title>Snack' - Portfolio</title>
 
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
@@ -29,22 +29,22 @@
 
 	  <div class="inside">
 	    
-	    <a id="logo" href="/">Snack'</a>
+	    <a id="logo" href="#top" class="scroll"><img src="img/link.gif" /><p>Snack'</p></a>
 	    
 	    <nav>
 	      <a id="menu" class="entypo-list" href="#"></a>
 	      <ul>
 	        <li>
-	          <a href="#" class="entypo-home"> &nbsp;Home</a>
+	          <a href="#top" class="entypo-home scroll"> &nbsp;Home</a>
 	        </li>
 	        <li>
-	          <a href="#works" class="entypo-picture"> &nbsp;Work</a>
+	          <a href="#works" class="entypo-picture scroll"> &nbsp;Work</a>
 	        </li>
 	        <li>
-	          <a href="#about" class="entypo-user"> &nbsp;About</a>
+	          <a href="#about" class="entypo-user scroll"> &nbsp;About</a>
 	        </li>
 	        <li>
-	          <a href="#contact" class="entypo-mail last"> &nbsp;Contact</a>
+	          <a href="#contact" class="entypo-mail last scroll"> &nbsp;Contact</a>
 	        </li>
 	      </ul>
 	    </nav>
@@ -53,12 +53,7 @@
 	</header>
 
 	<section>
-	  <div class="inside">
-
-		<div id="notice">
-			I use javascript only to enhance the page, not to track you.<br />
-			Don't trust me? Check the source: <a href="js/js.js">'js.js'</a>
-		</div>
+	  <div id="top" class="inside">
 
 	    <h1>Welcome to my simple webpage, it features my projects, some stuff about me and contact info.</h1>
 
@@ -140,10 +135,21 @@
 					<a href="https://github.com/Snacksnack/Ruby-Scribbles/tree/master/Ruby-Scribbles">Repository</a>
 				</h4>
 			</section>
+				<section class="work">
+	      		<h3>Gauto</h3>
+	      		<a href="img/gauto.png" title="Gauto"><img src="img/gauto.png"/></a>
+	      		<p>
+					A batch script that fully automates gource viewing, creating and converting for you, on Windows that is.<br />
+					It has a menu for plain usage and it can read command line arguments.
+				</p>
+				<h4>
+					<a href="https://github.com/Snacksnack/dotfiles/tree/master/dotfiles/gource">Repository</a>
+				</h4>
+			</section>
 			<section class="work">
 				<h3>Ircbot</h3>
 				<p>
-				Ircbot, written in java. It has extensive features and tries to be a backup for others.<br />
+					Ircbot, written in java. It has extensive features and tries to be a backup for others.<br />
 				<br />
 				Functions config snippet
 				<div class="code-wrapper">

@@ -62,7 +62,21 @@ header {
   float: left;
 }
 
+#logo img {
+  border-radius: 50%;
+  border: 3px solid #f7f7f7;
+  float: left;
+}
+
+#logo p {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 2px;
+  float: left;
+}
+
 header #menu {
+  display: none;
   float: right;
   color: white;
   font-size: 2.6em;
@@ -343,7 +357,6 @@ footer ul li a:hover {
 
 #overlay-wrapper img {
   border: 5px solid #f7f7f7;
-  border-radius: 10px;
 }
 
 #overlay-inner {
@@ -366,17 +379,4 @@ footer ul li a:hover {
 #overlay-inner-close {
   float: right;
   cursor: pointer;
-}
-
-/* Javascript notice */
-#notice {
-  max-width: 50%;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  padding: 5px;
-  
-  font-size: 14px;
-  background: #e74c3c;
-  box-shadow: 0px 0px 5px #a16a71;
-  border: 1px solid #a16a71;
 }
