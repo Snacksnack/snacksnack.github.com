@@ -2,22 +2,6 @@ $(document).ready(function() {
 	// Only show menu when js is on
 	$('#menu').show();
 
-	// Hides/shows the header
-	var visible = true;
-	$('header').click(function() {
-		toggleHeader();
-	});
-	$('#header-show').click(function() {
-		toggleHeader();
-	});
-	function toggleHeader() {
-		$('header').slideToggle(500);
-		visible = !visible;
-		$('.first').animate({
-			'margin-top': (visible) ? 0 : '-80px'
-		}, 500);
-	}
-
 	// Add listeners to image anchors to open the overlay
 	var imageLinks = $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]');
     if (imageLinks.children('img').length) {
