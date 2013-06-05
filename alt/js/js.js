@@ -34,12 +34,13 @@ $(document).ready(function() {
 
 	// Opens/closes the menu when the menu button is clicked
 	$('#menu').click(function() {
+		$(this).toggleClass('open');
 		$('header nav ul').fadeToggle();
-		return false;
 	});
 
 	// Close the menu when an option is picked
 	$('header nav ul a').click(function() {
+		$('#menu').removeClass('open');
 		$('header nav ul').fadeOut();
 	});
 
