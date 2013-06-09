@@ -1,0 +1,1 @@
+$('body').append('<div id="adblocktest">Why arent\'t you using adblock?</div>');
