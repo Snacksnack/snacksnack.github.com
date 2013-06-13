@@ -40,6 +40,12 @@ body {
 	margin-bottom: 0;
 }
 
+img {
+	position: fixed;
+	right: 10px;
+	bottom: -320px;
+}
+
 /* Text Selection */
 
 ::selection {
