@@ -44,6 +44,7 @@ img {
 	position: fixed;
 	right: 10px;
 	bottom: -320px;
+	opacity: 0.75;
 }
 
 /* Text Selection */
