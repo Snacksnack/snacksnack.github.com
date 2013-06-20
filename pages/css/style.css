@@ -1,6 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700);
+@charset 'UTF-8';
 
-@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
+
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
 
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
@@ -14,7 +16,8 @@ body {
   margin: 0;
   background-color: #fbfbfb;
   color: #546360;
-  font: 14px 'Merriweather Sans', sans-serif;
+  font: 0.9em 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 /* Text Selection */
@@ -57,7 +60,8 @@ h1 {
 h1,
 h2,
 h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
 }
 
 #content {
