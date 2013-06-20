@@ -16,15 +16,15 @@ body {
 
 /* Text Selection */
 ::selection {
-  background-color: #fff;
+  background-color: rgba(116, 212, 179, 0.3);
 }
 
 ::-moz-selection{
-  background-color: #fff;
+  background-color: rgba(116, 212, 179, 0.3);
 }
 
 ::-webkit-selection {
-  background-color: #fff;
+  background-color: rgba(116, 212, 179, 0.3);
 }
 
 a {
@@ -46,7 +46,6 @@ p {
 
 h1 {
   font-size: 2.5em;
-  margin-left: 20px;
 }
 
 h1, h2, h3 {
@@ -56,6 +55,10 @@ h1, h2, h3 {
 #content {
   width: 80%;
   margin: 0 auto;
+}
+
+.header h1 {
+  margin-left: 20px;
 }
 
 .section {
@@ -99,6 +102,10 @@ h1, h2, h3 {
   border-bottom: 1px dotted #74d4b3;
 }
 
+.text-container a:hover {
+  border-bottom: 1px dotted #74d490;;
+}
+
 .left {
   float: left;
   text-align: right;
@@ -127,16 +134,20 @@ h1, h2, h3 {
 }
 
 .img-anchor:hover:after {
-  opacity: 1.0;
+  opacity: 1;
 }
 
-.section ul {
+.footer {
+  border-top: 1px solid #d0d0d0;
+}
+
+.footer ul {
   font-size: 3em;
   padding: 10px 0px;
   margin: 0px;
 }
 
-.section ul li {
+.footer ul li {
   display: inline-block;
   margin: 0px 15px;
 }
