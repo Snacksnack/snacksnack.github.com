@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Snack' - Weather</title>
+
+		<script src="js/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				updateWeather();
+			});
+
+			function updateWeather() {
+			    var loc = 'wilsum';
+			    var url = 'http://api.wunderground.com/api/bf6fcb121000e936/geolookup/conditions/q/' + encodeURIComponent(loc) + '.json';
+			    
+			    $.ajax({
+			        dataType: 'jsonp',
+			        url: url,
+			        timeout: 5000,
+			        success: function(data) {
+			        	 var location = data['location']['city'];
+			        	 var type = data['current_observation']['weather'];
+			        	 var temp_c = data['current_observation']['temp_c'];
+			        	 document.getElementById('weather').innerHTML = location + '<br />' + type + '<br />' + temp_c + '&deg;C';
+			        },
+			    	error: function() {
+			            document.getElementById('weather').innerHTML = "";
+			        }
+			    });
+			    t = setTimeout('updateWeather()',900000);
+			}
+		</script>
+		<style>
+			body {
+				background: #333;
+				color: #eee;
+				text-align: center;
+				font-size: 3em;
+			}
+			#content {
+				width: 50%;
+				height: 50%;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="content">
+		<img src="http://traffic-583416025.eu-west-1.elb.amazonaws.com/v2/images.aspx" />
+		<div id="weather"></div>
+	</div>
+	</body>
+</html>

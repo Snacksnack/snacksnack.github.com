@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700' rel='stylesheet' type='text/css'>
+		
+		<link rel='stylesheet' type='text/css' href='css/style.css' />
+		<link rel='icon' type='image/png' href='img/icons/icon.png' />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/snack.js" type="text/javascript"></script>
+		
+		<title>snack'</title>
+	</head>
+	<body>
+		<div id="overlay-wrapper">
+			<img src=""/>
+		</div>
+		
+		<div id="sidebar">
+			<div class="title">
+				<a href="https://github.com/Snacksnack">snack'</a>
+			</div>
+			<div class="group">
+				<a href='#startpage'>Startpage</a>
+				<a href='#userchrome'>UserChrome</a>
+			</div>
+			<div class="group">
+				<a href='#colors'>Colors</a>
+				<a href='#pastie'>Pastie</a>
+				<a href='#fighters'>Fighters</a>
+				<a href='#scribbles'>Scribbles</a>
+			</div>
+			<div class="group">
+				<a href="#ircbot">Ircbot</a>
+			</div>
+			<div class="group">
+				<a href='#bblean'>bbLean</a>
+				<a href='#console'>Console2</a>
+			</div>
+			<div class="contact">
+				<a href="https://github.com/Snacksnack"><img src="img/icons/github.png"/>snacksnack</a>
+				<a href="http://www.last.fm/user/Snack93"><img src="img/icons/lastfm.png"/>Snack93</a>
+				<a href="skype:s.snack93?chat"><img src="img/icons/skype.png"/>S.Snack93</a>
+				<a href="https://twitter.com/#!/snackdev"><img src="img/icons/twitter.png"/>@SnackDev</a>
+			</div>
+		</div>
+		
+		<div id="head">
+			<div id="notice">
+				I use javascript only to enhance the page, not to track you.<br />
+				Don't trust me? Check the source: <a href="js/snack.js">'snack.js'</a>
+			</div>
+			Introduction goes here.
+		</div>
+		<div class="content">
+			<div class="section">
+				<h2 id="startpage">Startpage</h2>
+				Custom startpage, preferably used in firefox, not fully tested in other browsers.
+				<a href="img/startpage.jpg"><img src="img/startpage.jpg"/></a>
+				<div class="links">
+					<a href="homepage/index.html">Preview</a>
+					<a href="https://github.com/Snacksnack/Homepage">Repository</a>
+				</div>
+			</div>
+			<div class="section">
+				<h2 id="userchrome">UserChrome</h2>
+				Custom userChrome.css, only used in firefox and shouldn't require anything.<br />
+				Still very buggy, so I'm still working on it daily.<br />
+				Note; It's transparent so it takes your default window color (which is why it's grey for me).
+				<a href="img/userchrome.png"><img src="img/userchrome.png"/></a>
+				<div class="links">
+					<a href="https://github.com/Snacksnack/dotfiles/tree/master/dotfiles/CSS">Repository</a>
+				</div>
+			</div>
+			<div class="section">
+				<h2 id="colors">Colors</h2>
+				Colors script, written in Ruby, supports table, list and custom colors.
+				<a href="img/colors.png"><img src="img/colors.png"/></a>
+				<div class="links">
+					<a href="https://github.com/Snacksnack/Ruby-Colors/tree/master/Ruby-Colors">Repository</a>
+				</div>
+			</div>
+			<div class="section">
+				<h2 id="pastie">Pastie</h2>
+				Pastie script, posts files to pastie.org<br />
+				<a href="img/pastie.png"><img src="img/pastie.png"/></a>
+				<div class="links">
+					<a href="https://github.com/Snacksnack/Ruby-Pastie/tree/master/Ruby-Pastie">Repository</a>
+				</div>
+			</div>
+			<div class="section">
+				<h2 id="fighters">Fighters</h2>
+				Ruby script, some weird fencers move from side to side while fighting and shouting insults at each other.<br />
+				Supports colors, speed, movement, and timer options.
+				<a href="img/fighters.png"><img src="img/fighters.png"/></a>
+				<div class="links">
+				<a href="https://github.com/Snacksnack/Ruby-Fighters/tree/master/Ruby-Fighters">Repository</a>
+				</div>
+			</div>
+			<div class="section">
+				<h2 id="scribbles">Scribbles</h2>
+				I tend to write a lot of crap in Ruby, I keep them in a repository for myself or anyone that cares.<br />
+				Current list of items;<br />
+				<ul>	
+					<li>euler</li>
+					<li>feels</li>
+					<li>calc.rb</li>
+					<li>life.rb</li>
+					<li>maze.rb</li>
+					<li>poker.rb</li>
+					<li>rename.rb</li>
+					<li>rock_paper_etc.rb</li>
+					<li>testing.rb</li>
+					<li>tick_tack_tow.rb</li>
+				</ul>
+				<div class="links">
+					<a href="https://github.com/Snacksnack/Ruby-Scribbles/tree/master/Ruby-Scribbles">Repository</a>
+				</div>
+			</div>
+			<div class="section">
+				<h2 id="ircbot">Ircbot</h2>
+				Ircbot, written in java. It has extensive features and tries to be a backup for others.
+<!-- Code blocks are pre-wrap ergo; bad indentation. And the syntax highlighting is a span-fest. -->
+<div class="code-wrapper">
+<div class="code-title"><span class="black thick">Functions config snippet</span><span class="code-label">*</span></div>
+<div class="code">"functions": {
+    "greet": {
+        "enabled": "<span class="red">false</span>",
+        "visible": "<span class="cyan">public</span>"
+    },
+    "html":      "<span class="green">true</span>",
+    "lastfm":    "<span class="green">true</span>",
+    "weather":   "<span class="green">true</span>",
+    "quote":     "<span class="green">true</span>",
+    "tell":      "<span class="green">true</span>",
+    "translate": "<span class="red">false</span>",
+    "romaji":    "<span class="red">false</span>",
+    "search": {
+        "enabled": "<span class="green">true</span>",
+        "default": "<span class="cyan">g</span>"
+    }
+}</div>
+</div>
+
+<div class="code-wrapper">
+<div class="code-title"><span class="black thick">Databasemanager snippet</span><span class="code-label">*</span></div>
+<div id="cc-2" class="code"><span class="black thick">private Mongo</span> mongo;
+<span class="black thick">private</span> <span class="orange-red">DB</span> db;
+<span class="black thick">private DBCollection</span> weather_collection, lastfm_collection, quote_collection, tell_collection;
+                
+<span class="black thick">private static DatabaseManager</span> instance <span class="green">=</span> <span class="yellow">null</span>;
+                
+<span class="black thick">public static DatabaseManager</span> getInstance() {
+    <span class="green">if</span> (instance <span class="green">==</span> <span class="yellow">null</span>) {
+        <span class="black thick">Monitor</span><span class="green">.</span>print(<span class="cyan"><span class="red">"</span>~INFO Initializing database<span class="red">"</span></span>);
+        instance <span class="green">=</span> <span class="green">new</span> <span class="black thick">DatabaseManager</span>();
+        <span class="black thick">Monitor</span><span class="green">.</span>print(<span class="cyan"><span class="red">"</span>~INFO Initialized database<span class="red">"</span></span>);
+    }
+    <span class="green">return</span> instance;
+}</div>
+</div>
+
+<div class="code-wrapper">
+<div class="code-title"><span class="black thick">HTMLGetter snippet</span><span class="code-label">*</span></div>
+<div class="code"><span class="grey">// Try to determine filesize/type/encoding</span>
+<span class="black thick">URL</span> url <span class="green">= new</span> <span class="black thick">URL</span>(urlString);
+<span class="black thick">URLConnection</span> conn <span class="green">=</span> url<span class="green">.</span>openConnection();
+conn<span class="green">.</span>setRequestProperty(<span class="cyan"><span class="red">"</span>User-Agent<span class="red">"</span></span>, <span class="cyan"><span class="red">"</span>Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.2.2) Gecko/20100316 Firefox/3.6.2<span class="red">"</span></span>);
+conn<span class="green">.</span>setReadTimeout(<span class="pink">10000</span>);
+<span class="black thick">int</span> size <span class="green">=</span> conn<span class="green">.</span>getContentLength();
+<span class="black thick">String</span> sizeString, output;
+<span class="black thick">double</span> filesize;
+<span class="green">if</span> (size <span class="green">&lt;=</span> <span class="pink">0</span>) {
+    output <span class="green">=</span> <span class="black thick">Config</span><span class="green">.</span>speech<span class="green">.</span>get(<span class="cyan"><span class="red">"</span>HT_SUC_SIZE0<span class="red">"</span></span>);
+} <span class="green">else</span> {
+    <span class="black thick">double</span> bytes <span class="green">=</span> <span class="black thick">Double</span><span class="green">.</span>valueOf(size);
+    <span class="black thick">double</span> kilobytes <span class="green">=</span> (bytes <span class="green">/</span> <span class="pink">1024</span>);
+    <span class="black thick">double</span> megabytes <span class="green">=</span> (kilobytes <span class="green">/</span> <span class="pink">1024</span>);
+    <span class="black thick">double</span> gigabytes <span class="green">=</span> (megabytes <span class="green">/</span> <span class="pink">1024</span>);
+
+    <span class="green">if</span> (kilobytes <span class="green">&lt;</span> <span class="pink">1</span>) {
+        sizeString <span class="green">=</span> <span class="cyan"><span class="red">"</span>B<span class="red">"</span></span>;
+        filesize <span class="green">=</span> bytes;
+    } <span class="green">else if</span> (megabytes <span class="green">&lt;</span> <span class="pink">1</span>) {
+        sizeString <span class="green">=</span> <span class="cyan"><span class="red">"</span>KiB<span class="red">"</span></span>;
+        filesize <span class="green">=</span> kilobytes;
+    } <span class="green">else if</span> (gigabytes <span class="green">&lt;</span> <span class="pink">1</span>) {
+        sizeString <span class="green">=</span> <span class="cyan"><span class="red">"</span>MiB<span class="red">"</span></span>;
+        filesize <span class="green">=</span> megabytes;
+    } <span class="green">else</span> {
+        sizeString <span class="green">=</span> <span class="cyan"><span class="red">"</span>GiB<span class="red">"</span></span>;
+        filesize <span class="green">=</span> gigabytes;
+    }
+
+    filesize <span class="green">= new</span> <span class="black thick">BigDecimal</span>(filesize)<span class="green">.</span>setScale(<span class="pink">2</span>, <span class="black thick">BigDecimal</span><span class="orange-red"><span class="green">.</span>ROUND_HALF_UP</span>)<span class="green">.</span>doubleValue();
+    output <span class="green">=</span> <span class="black thick">Config</span><span class="green">.</span>speech<span class="green">.</span>get(<span class="cyan"><span class="red">"</span>HT_SUC_!SIZE0<span class="red">"</span></span>)<span class="green">.</span>replace(<span class="cyan"><span class="red">"</span>&lt;size><span class="red">"</span></span>, <span class="black thick">Double</span><span class="green">.</span>toString(filesize))<span class="green">.</span>replace(<span class="cyan"><span class="red">"</span>&lt;format><span class="red">"</span></span>, sizeString);</div>
+</div>
+<!-- End of code blocks -->
+				<div class="links">
+					<a href="https://github.com/Snacksnack/IrcBot/tree/master/IrcBot">Repository</a>
+				</div>
+			</div>
+			<div class="section">
+				<h2 id="bblean">bbLean</h2>
+				Light bbLean theme, based on bb_crim by apathyrecharge.<br />
+				Basically inverted his colors and removed the red.
+				<a href="img/bblean.png"><img src="img/bblean.png"/></a>
+				<div class="links">
+					<a href="https://github.com/Snacksnack/dotfiles/tree/master/dotfiles/bbLean">Repository</a>
+				</div>
+			</div>
+			<div class="section">
+				<h2 id="console">Console2</h2>
+				Console2 settings file, light colors and default paths set.<br />
+				Best used with an autorun.cmd and simple cmd.exe
+				<a href="img/console.png"><img src="img/console.png"/></a>
+				<div class="links">
+					<a href="https://github.com/Snacksnack/dotfiles/tree/master/dotfiles/Console2">Repository</a>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>
