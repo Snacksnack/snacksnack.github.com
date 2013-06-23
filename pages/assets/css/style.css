@@ -1,27 +1,17 @@
 @charset 'UTF-8';
-
+/* General Text */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
-
-@import url(http://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
-
+/* Titles */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* Icon font */
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
-/* entypo */
-
+/* Entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
 
-body {
-  margin: 0;
-  background-color: #fbfbfb;
-  color: #546360;
-  font: 0.9em 'Roboto', sans-serif;
-  font-weight: 400;
-}
-
 /* Text Selection */
-
 ::selection {
   background-color: rgba(116, 212, 179, 0.3);
 }
@@ -32,6 +22,15 @@ body {
 
 ::-webkit-selection {
   background-color: rgba(116, 212, 179, 0.3);
+}
+
+/* General Style */
+body {
+  margin: 0;
+  background-color: #fbfbfb;
+  color: #546360;
+  font: 0.9em 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -59,11 +58,12 @@ h1 {
 }
 
 h1, h2 {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-transform: lowercase;
 }
 
+/* Content Style */
 #content {
   width: 80%;
   margin: 0 auto;
@@ -152,15 +152,26 @@ h1, h2 {
 }
 
 .left .quote {
+  margin-right: 0px;
   padding-right: 10px;
   border-right: 5px solid #74d4b3;
 }
 
 .right .quote {
+  margin-left: 0px;
   padding-left: 10px;
   border-left: 5px solid #74d4b3;
 }
 
+/* Header Style */
+.header img {
+  height: 3em;
+  margin-left: 20px;
+  margin-top: 1px;
+  float: left;
+}
+
+/* Footer Style */
 .footer {
   border-top: 1px solid #d0d0d0;
 }
