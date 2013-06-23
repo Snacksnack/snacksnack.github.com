@@ -1,12 +1,4 @@
-/*
-/*
- * Author: 73 6E 61 63 6B 27 
- * Last edit: 04/04/2013 15:22 +0100
- */
-$(document).ready(function() {	
-	// Hide the javascript notice
-	$('#notice').hide();
-	
+$(document).ready(function() {		
 	// Add listeners to image anchors to open the overlay
 	var imageLinks = $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]');
     if (imageLinks.children('img').length) {

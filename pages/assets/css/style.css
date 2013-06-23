@@ -207,6 +207,10 @@ h1, h2 {
   
   border: 5px solid #74d4b3;
   border-radius: 5px;
+
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 #overlay-wrapper img:hover {
