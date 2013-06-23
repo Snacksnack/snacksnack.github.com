@@ -186,3 +186,30 @@ h1, h2 {
   display: inline-block;
   margin: 0px 15px;
 }
+
+/* Overlay */
+#overlay-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.4);
+}
+
+#overlay-wrapper img {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  cursor: pointer;
+  
+  border: 5px solid #74d4b3;
+  border-radius: 5px;
+}
+
+#overlay-wrapper img:hover {
+  border: 5px solid #74d490;
+  border-radius: 5px;
+}
