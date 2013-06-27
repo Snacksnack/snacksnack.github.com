@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+#map-canvas {
+	height: 500px;
+	margin-top: 2px;
+}
+
+#map-canvas ul {
+	float: left;
+}
+
+#map-img {
+	max-height: 100px;
+	float: right;
+	border: 1px solid #232323;
+	border-radius: 2px;
+}

@@ -9,6 +9,7 @@
 **/
 $(document).ready(function() {
 	addPopupListeners();
+	addBannerListener();
 });
 
 
@@ -17,7 +18,7 @@ $(document).ready(function() {
 	@method addPopupListeners
 **/
 function addPopupListeners() {
-	// Select all the linksleading to an image
+	// Select all the links leading to an image
 	var imageLinks = $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]');
 	// Check if they contain an image
 	if (imageLinks.children('img').length) {
@@ -42,4 +43,27 @@ function addPopupListeners() {
 	$('#overlay-wrapper').click(function() {
 		$(this).fadeOut(300);
 	});
-}
+}
+
+function addBannerListener() {
+	$(window).scroll(function() {
+		scrollPos = $(this).scrollTop();
+		var opacity = 1 - (scrollPos/250);
+		$('#banner').css({
+			'background-position': '50% ' + (-scrollPos/4) + 'px'
+		});
+		$('#banner-text').css({
+			'margin-top': (scrollPos/4) + 'px',
+			'opacity': opacity
+		});
+		if (opacity <= 0) {
+			$('#banner-text').hide();
+		} else {
+			$('#banner-text').show();
+		}
+	});
+
+	$('#banner-text').click(function() {
+		location.href = 'https://github.com/Snacksnack';
+	})
+}
