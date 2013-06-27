@@ -1,5 +1,5 @@
 /**
-	Only class, handles the image overlay, banner scrolling and copyright info
+	Only class, handles the image overlay and banner scrolling
 	@class js
 **/
 
@@ -10,7 +10,6 @@
 $(document).ready(function() {
 	addPopupListeners();
 	addBannerListener();
-	addInfoListener();
 });
 
 
@@ -73,15 +72,4 @@ function addBannerListener() {
 	$('#banner-text').click(function() {
 		location.href = 'https://github.com/Snacksnack';
 	})
-}
-
-/**
-	Adds a listener to the info arrow for copyright info
-	@method addInfoListener
-**/
-function addInfoListener() {
-	$('.info-marker').show();
-	$('.info-marker').click(function() {
-		$('.info-popup').toggle(300);
-	});
 }
