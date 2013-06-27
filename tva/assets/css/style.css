@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 /* General Text */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic);
 /* Titles */
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 /* Icon font */
@@ -38,7 +38,7 @@ html, body {
 
 html {
   color: #d0d0d0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 12px;
   -webkit-font-smoothing: antialiased;
 }
