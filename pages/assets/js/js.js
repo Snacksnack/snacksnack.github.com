@@ -1,5 +1,5 @@
 /**
-	Only class, handles the image overlay
+	Only class, handles the image overlay, banner scrolling and copyright info
 	@class js
 **/
 
@@ -10,6 +10,7 @@
 $(document).ready(function() {
 	addPopupListeners();
 	addBannerListener();
+	addInfoListener();
 });
 
 
@@ -45,8 +46,13 @@ function addPopupListeners() {
 	});
 }
 
+/**
+	Adds a listener to the banner for a ncie scrolling effect
+	@method addBannerListener
+**/
 function addBannerListener() {
 	$(window).scroll(function() {
+		// Scroll the banner
 		scrollPos = $(this).scrollTop();
 		var opacity = 1 - (scrollPos/250);
 		$('#banner').css({
@@ -56,14 +62,26 @@ function addBannerListener() {
 			'margin-top': (scrollPos/4) + 'px',
 			'opacity': opacity
 		});
+		// Hide the banner if it's opacity <= 0
 		if (opacity <= 0) {
 			$('#banner-text').hide();
 		} else {
 			$('#banner-text').show();
 		}
 	});
-
+	// Make the banner redirect to my github
 	$('#banner-text').click(function() {
 		location.href = 'https://github.com/Snacksnack';
 	})
+}
+
+/**
+	Adds a listener to the info arrow for copyright info
+	@method addInfoListener
+**/
+function addInfoListener() {
+	$('.info-marker').show();
+	$('.info-marker').click(function() {
+		$('.info-popup').toggle(300);
+	});
 }

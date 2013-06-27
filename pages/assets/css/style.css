@@ -222,6 +222,36 @@ h1, h2 {
   margin: 0 .5em;
 }
 
+.info-marker {
+  display: none;
+  font-size: 1em;
+  position: fixed;
+  right: 11.5%;
+  bottom: 3.3em;
+  cursor: pointer;
+}
+
+.info-popup {
+  display: none;
+  font-size: .8em;
+  position: fixed;
+  padding: .4em;
+  right: 12.5%;
+  bottom: 2.5em;
+
+  background: #fbfbfb;
+  border: .1em solid #74d4b3;
+  border-radius: .4em;
+
+  -webkit-transition: border 0.3s ease 0s;
+  -o-transition: border 0.3s ease 0s;
+  transition: border 0.3s ease 0s;
+}
+
+.info-popup:hover {
+  border: .1em solid #74d490;
+}
+
 /* Overlay */
 #overlay-wrapper {
   display: none;
