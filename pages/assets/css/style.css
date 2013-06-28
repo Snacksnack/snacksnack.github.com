@@ -261,7 +261,7 @@ h1, h2 {
 /* Logo */
 #logo {
   width: 22em;
-  height: 8em;
+  height: 7em;
 }
 
 #logo div {
@@ -275,13 +275,13 @@ h1, h2 {
 }
 
 .ball {
-  top: 6em;
+  top: 5em;
   width: .7em;
   border-radius: .7em;
 }
 
 .beam {
-  top: 6em;
+  top: 5em;
   width: 4.4em;
 }
 
@@ -318,43 +318,43 @@ h1, h2 {
 }
 
 #up-one {
-  top: 4.7em;
+  top: 3.7em;
   left: 6.6em;
   width: 1em;
 }
 
 #down-one {
-  top: 6em;
+  top: 5em;
   left: 7.4em;
   width: 2em;
 }
 
 #up-two {
-  top: 6em;
+  top: 5em;
   left: 9.2em;
   width: 2em;
 }
 
 #down-two {
-  top: 6em;
+  top: 5em;
   left: 11em;
   width: 2em;
 }
 
 #up-three {
-  top: 6em;
+  top: 5em;
   left: 12.8em;
   width: 2em;
 }
 
 #down-three {
-  top: 6em;
+  top: 5em;
   left: 14.6em;
   width: 2em;
 }
 
 #up-four {
-  top: 7.4em;
+  top: 6.4em;
   left: 16.4em;
   width: 1em;
 }
