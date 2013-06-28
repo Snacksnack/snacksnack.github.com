@@ -46,19 +46,20 @@ function addPopupListeners() {
 }
 
 /**
-	Adds a listener to the banner for a ncie scrolling effect
+	Adds a listener to the banner for a nice scrolling effect
 	@method addBannerListener
 **/
 function addBannerListener() {
 	$(window).scroll(function() {
 		// Scroll the banner
+		var diff = ($(window)[0].innerHeight / $('#banner-text').height()) * 2;
 		scrollPos = $(this).scrollTop();
-		var opacity = 1 - (scrollPos/250);
+		var opacity = 1 - (scrollPos/($('#banner-text').height() * (diff/8)));
 		$('#banner').css({
-			'background-position': '50% ' + (-scrollPos/4) + 'px'
+			'background-position': '50% ' + (-scrollPos/diff) + 'px'
 		});
 		$('#banner-text').css({
-			'margin-top': (scrollPos/4) + 'px',
+			'margin-top': (scrollPos/diff) + 'px',
 			'opacity': opacity
 		});
 		// Hide the banner if it's opacity <= 0
