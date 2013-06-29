@@ -1,3 +1,8 @@
+@charset 'UTF-8';
+/* Text */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
+/* Title */
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:700);
 /* Icon font */
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
@@ -14,6 +19,14 @@ body, html {
 html {
 	height: 100%;
 	width: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: 'Droid Sans', sans-serif;
 }
 
 #header {
