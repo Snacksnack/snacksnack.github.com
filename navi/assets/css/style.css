@@ -79,9 +79,11 @@ h1, h2, h3 {
 
 #about {
 	position: fixed;
-	bottom: 00;
+	bottom: 0;
 	left: 100;
 	padding: 20px;
+	height: 180px;
+	width: 100%;
 	background: #2D2D2D;
 	color: #FFF;
 	display: none;
