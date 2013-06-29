@@ -77,6 +77,16 @@ h1, h2, h3 {
 	left: 20;
 }
 
+#about {
+	position: fixed;
+	bottom: 00;
+	left: 100;
+	padding: 20px;
+	background: #2D2D2D;
+	color: #FFF;
+	display: none;
+}
+
 #sidebar a:nth-child(1) {
 	border: 10px solid #E2BD00;
 	background: #E2BD00;
