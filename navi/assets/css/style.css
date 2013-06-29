@@ -78,8 +78,8 @@ h1, h2, h3 {
 }
 
 #sidebar a:nth-child(1) {
-	border: 10px solid #FFD800;
-	background: #FFD800;
+	border: 10px solid #E2BD00;
+	background: #E2BD00;
 }
 
 #sidebar a:nth-child(2) {
@@ -98,7 +98,7 @@ h1, h2, h3 {
 }
 
 #sidebar a:nth-child(1).selected {
-	box-shadow: 0 0 25px #FFD800;
+	box-shadow: 0 0 25px #E2BD00;
 }
 
 #sidebar a:nth-child(2).selected {
@@ -139,7 +139,7 @@ h1, h2, h3 {
 }
 
 .yellow {
-	color: #FFD800;
+	color: #E2BD00;
 }
 
 .red {
