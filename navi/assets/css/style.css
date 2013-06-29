@@ -89,6 +89,35 @@ h1, h2, h3 {
 	display: none;
 }
 
+#about h3 {
+	padding: 0;
+	margin: 0;
+}
+
+#about ul {
+	padding: 10px;
+	margin: 0;
+}
+
+#about ul li {
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	padding-right: 15px;
+}
+
+#about ul li img {
+	display: block;
+	max-height: 100px;
+	height: 100px;
+}
+
+#about ul li a {
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+}
+
 #sidebar a:nth-child(1) {
 	border: 10px solid #E2BD00;
 	background: #E2BD00;
