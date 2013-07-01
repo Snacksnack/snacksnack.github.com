@@ -52,7 +52,7 @@ function addPopupListeners() {
 function addBannerListener() {
 	$(window).scroll(function() {
 		// Scroll the banner
-		var diff = ($(window)[0].innerHeight / $('#banner-text').height()) * 2;
+		var diff = ($(this)[0].innerHeight / $('#banner-text').height()) * 2;
 		scrollPos = $(this).scrollTop();
 		var opacity = 1 - (scrollPos/($('#banner-text').height() * (diff/8)));
 		$('#banner').css({
@@ -73,4 +73,10 @@ function addBannerListener() {
 	$('#banner-text').click(function() {
 		location.href = 'https://github.com/Snacksnack';
 	})
+	// Make the more button scroll down
+	$('#banner-button').click(function() {
+		$('html,body').animate({
+			scrollTop: $(window)[0].innerHeight
+		}, 1000);
+	});
 }

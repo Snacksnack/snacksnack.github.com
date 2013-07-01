@@ -78,6 +78,10 @@ h1, h2 {
   overflow: auto;
 }
 
+.section:nth-child(1) {
+  border-top: none;
+}
+
 .title {
   text-align: center;
   margin-bottom: .5em;
@@ -220,7 +224,6 @@ h1, h2 {
 #banner {
   background: url('../../assets/img/bg.jpg') no-repeat fixed 50% 0;
   background-size: cover;
-  color: #fbfbfb;
   text-align: center;
   height: 100%;
   width: 100%;
@@ -228,12 +231,11 @@ h1, h2 {
 }
 
 #banner-text {
+  color: #fbfbfb;
   width: 24em;
   position: fixed;
   top: 25%;
   left: 50%;
-  border: .5em solid #fbfbfb;
-  border-radius: .8em;
   margin-left: -12em;
   padding: 2em 0;
 
@@ -244,8 +246,6 @@ h1, h2 {
 }
 
 #banner-text:hover {
-  background: rgba(251,251,251,0.2); /* #fbfbfb */
-  border-color: #74d490;
   color: #74d490;
 }
 
@@ -255,6 +255,30 @@ h1, h2 {
 
 #banner-text img {
   max-width: 22em;
+}
+
+#banner-button {
+  display: block;
+  background: #fbfbfb;
+  bottom: -23px;
+  height: 40px;
+  padding: 10px 0;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  webkit-transition: bottom 0.3s ease 0s, color 0.3s ease 0s;
+  -o-transition: bottom 0.3s ease 0s, color 0.3s ease 0s;
+  transition: bottom 0.3s ease 0s, color 0.3s ease 0s;
+}
+
+#banner-button:hover {
+  color: #74d490;
+  bottom: -15px;
 }
 
 /* Logo */
