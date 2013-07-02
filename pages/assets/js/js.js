@@ -33,8 +33,8 @@ function addPopupListeners() {
 			$('#overlay-wrapper').fadeIn(300);
 			$('#overlay-wrapper img').attr('title', 'Click anywhere to close');
 			$('#overlay-wrapper img').css({
-				'margin-left': ($(window).width() - $('#overlay-wrapper img').width()) / 2,
-				'margin-top': ($(window).height() - $('#overlay-wrapper img').height()) / 2
+				'margin-left': ($(window)[0].innerWidth - $('#overlay-wrapper img').width()) / 2,
+				'margin-top': ($(window)[0].innerHeight - $('#overlay-wrapper img').height()) / 2
 			})
 		});
 	}

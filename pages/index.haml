@@ -1,0 +1,121 @@
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+	%head
+		%meta{"http-equiv" => "content-type", :content => "text/html; charset=UTF-8"}/
+		%meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+		%title ohm --portfolio
+
+		%link{:href => "assets/favicon.png", :rel => "icon", :type => "image/png"}/
+		%link{:href => "assets/css/style.css", :rel => "stylesheet", :type => "text/css"}/
+
+		%script{:type => "text/javascript", :src => "assets/vendor/jquery-2.0.2.min.js"}
+		%script{:type => "text/javascript", :src => "assets/js/js.js"}
+
+	%body
+		#overlay-wrapper
+			%img{:src => "#", :alt => "overlay-img"}/
+
+		#banner
+			#banner-text{:title => "Visit my GitHub profile?"}
+				#logo
+					.ball#ball-left
+					.beam#beam-left
+					.up#up-one
+					.down#down-one
+					.up#up-two
+					.down#down-two
+					.up#up-three
+					.down#down-three
+					.up#up-four
+					.beam#beam-right
+					.ball#ball-right
+				%h1 ohm
+
+			#banner-button More
+
+		#content
+			
+			.section
+				.title
+					%h1 Picker
+					Custom startpage, should work properly in all modern web browsers
+				.data.left
+					.img-container
+						%a.img-anchor{:href => "assets/img/startpage.jpg"}
+							%img{:src => "assets/img/startpage.jpg", :alt => "startpage"}/
+				.data.right
+					.text-container
+						%div
+							Made it modular, thanks oneesama.
+							%br/
+							%br/
+							You can edit quite a lot in config.js
+							.quote
+								The amount of vertical and horizontal tabs
+								%br/
+								The data of each individual tab
+								%br/
+								The amount of pages to have (1 page means no nav)
+								%br/
+								Which background to use, drag-n-drop
+							Icons for the tabs can be found
+							%a{:href => "http://fontawesome.io/icons/"} here
+						%a{:href => "http://rawgithub.com/Snacksnack/Homepage/master/index.html"} Preview
+						%br
+						%a{:href => "https://github.com/Snacksnack/Homepage"} Repository
+
+			.section
+				.data.right
+					.img-container
+						%a.img-anchor{:href => "assets/img/cappuccino.jpg"}
+							%img{:src => "assets/img/cappuccino.jpg", :alt => "cappuccino"}/
+				.data.left
+					.text-container
+						%h2 Cappuccino
+						%div
+							Ircbot, written in java. It has extensive features and tries to be a backup for others.
+							.quote
+								&lt;cappuccino&gt; Bot info - JRE Vendor: Oracle Corporation - JRE Version: 1.7.0_06 - OS Name: Windows 8 - OS Version: 6.2 - OS Arch: amd64 - OS Language: en
+							.quote
+								&lt;cappuccino&gt; Wilsum, Germany: Mostly Cloudy 21.1°C/ 70.0°F Wind: NW at 3.2 KPH gusting to 8.0 KPH Humidity: 86%
+						%a{:href => "https://github.com/Snacksnack/IrcBot/tree/master/IrcBot"} Repository
+
+			.section
+				.data.left
+					.img-container
+						%a.img-anchor{:href => "assets/img/gauto.png"}
+							%img{:src => "assets/img/gauto.png", :alt => "gauto"}/
+				.data.right
+					.text-container
+						%h2 Gauto
+						%div
+							A batch script that fully automates gource viewing, creating and converting for you, on Windows that is.<br />
+							It has a menu for plain usage and it can read command line arguments.
+						%a{:href => "https://github.com/Snacksnack/dotfiles/tree/master/dotfiles/gource"} Repository
+
+			.section
+				.data.right
+					.img-container
+						%a.img-anchor{:href => "assets/img/pastie.png"}
+							%img{:src => "assets/img/pastie.png", :alt => "pastry"}/
+				.data.left
+					.text-container
+						%h2 Pastry
+						%div
+							Pastie script, posts files to pastie.org
+						%a{:href => "https://github.com/Snacksnack/Ruby-Pastie/tree/master/Ruby-Pastie"} Repository
+
+			.footer
+				.title
+					%ul
+						%li
+							%a.entypo-facebook-circled{:href => "https://www.facebook.com/Snack93"}
+						%li
+							%a.entypo-twitter-circled{:href => "https://twitter.com/SnackDev"}
+						%li
+							%a.entypo-lastfm-circled{:href => "http://www.last.fm/user/Snack93"}
+						%li
+							%a.entypo-github-circled{:href => "https://github.com/Snacksnack"}
+						%li
+							%a.entypo-spotify-circled{:href => "https://play.spotify.com/user/snacksnack"}
+						%li
+							%a.entypo-skype-circled{:href => "skype:s.snack93?chat"}
