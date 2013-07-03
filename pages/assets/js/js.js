@@ -1,22 +1,12 @@
-/**
-	Only class, handles the image overlay and banner scrolling
-	@class js
-**/
+// Handles the image overlay and banner scrolling
 
-/**
-	Executed when the page is ready
-	@method document.ready
-**/
 $(document).ready(function() {
 	addPopupListeners();
 	addBannerListener();
 });
 
 
-/**
-	Adds listeners to image anchors for a nice popup, and a listener to close it again
-	@method addPopupListeners
-**/
+// Adds listeners to image anchors for a nice popup, and a listener to close it again
 function addPopupListeners() {
 	// Select all the links leading to an image
 	var imageLinks = $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]');
@@ -45,10 +35,7 @@ function addPopupListeners() {
 	});
 }
 
-/**
-	Adds a listener to the banner for a nice scrolling effect
-	@method addBannerListener
-**/
+// Adds a listener to the banner for a nice scrolling effect
 function addBannerListener() {
 	$(window).scroll(function() {
 		// Scroll the banner

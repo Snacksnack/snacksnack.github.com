@@ -25,7 +25,8 @@
 }
 
 // Variables
-$background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/bedge_grunge.png) repeat;
+$background: url('../../assets/img/bedge_grunge.png') repeat;
+$background-banner: url('../../assets/img/bg.jpg') no-repeat fixed 50% 0;
 $main-color: #546360;
 $main-blue: rgb(39, 75, 106);
 $alt-blue: rgb(99, 135, 166);
@@ -170,7 +171,7 @@ h1, h2 {
     top: 0;
     right: 0;
     bottom: 0;
-    margin-bottom: 4px;
+    margin-bottom: 4.5px;
     content: 'View full image?';
     color: $main-blue;
     background: rgba(255,255,255,0.8);
@@ -237,7 +238,7 @@ h1, h2 {
 
 // Banner Style
 #banner {
-  background: url('../../assets/img/bg.jpg') no-repeat fixed 50% 0;
+  background: $background-banner;
   background-size: cover;
   text-align: center;
   height: 100%;
@@ -304,7 +305,7 @@ h1, h2 {
     background-color: $main-color;
     height: .7em;
 
-    webkit-transition: background-color 0.3s ease 0s;
+    -webkit-transition: background-color 0.3s ease 0s;
     -o-transition: background-color 0.3s ease 0s;
     transition: background-color 0.3s ease 0s;
   }

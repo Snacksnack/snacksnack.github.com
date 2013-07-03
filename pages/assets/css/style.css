@@ -18,7 +18,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/bedge_grunge.png) repeat;
+  background: url("../../assets/img/bedge_grunge.png") repeat;
   color: #546360;
   font-family: "Noto Sans", sans-serif;
   font-size: 0.9em;
@@ -113,7 +113,7 @@ h1, h2 {
   top: 0;
   right: 0;
   bottom: 0;
-  margin-bottom: 4px;
+  margin-bottom: 4.5px;
   content: 'View full image?';
   color: #274b6a;
   background: rgba(255, 255, 255, 0.8);
@@ -184,7 +184,7 @@ h1, h2 {
 
 #banner-button {
   display: block;
-  background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/bedge_grunge.png) repeat;
+  background: url("../../assets/img/bedge_grunge.png") repeat;
   bottom: 0px;
   height: 22px;
   padding: 10px 0;
@@ -209,7 +209,7 @@ h1, h2 {
     position: absolute;
     background-color: #546360;
     height: .7em;
-    webkit-transition: background-color 0.3s ease 0s;
+    -webkit-transition: background-color 0.3s ease 0s;
     -o-transition: background-color 0.3s ease 0s;
     transition: background-color 0.3s ease 0s; }
 
