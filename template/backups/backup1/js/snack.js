@@ -1,4 +1,5 @@
 /*
+/*
  * Author: 73 6E 61 63 6B 27 
  * Last edit: 04/04/2013 15:22 +0100
  */
@@ -55,8 +56,7 @@ $(document).ready(function() {
                 updatePositions();
         });
     }
-});
-    /*
+    
 	// Updates the anchor locations
     updatePositions();
 	
@@ -103,4 +103,4 @@ function updateHighlight() {
 	    }
 	}
 	$(pageAnchors[closestPos]).addClass('active');
-}*/
+}
