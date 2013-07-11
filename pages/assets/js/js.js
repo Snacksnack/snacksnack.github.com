@@ -59,7 +59,7 @@ function addBannerListener() {
 	});
 	// Make the banner redirect to my github
 	$('#banner-text').click(function() {
-		location.href = 'https://github.com/Snacksnack';
+		location.href = 'https://github.com/nohm';
 	})
 	// Make the more button scroll down
 	$('#banner-button').click(function() {
