@@ -1,5 +1,6 @@
-// Handles the image overlay and banner scrolling
+//[2013-07-11 15:22 nohm <nohm@github.com>]
 
+// Handles the image overlay and banner scrolling
 $(document).ready(function() {
 	addPopupListeners();
 	addBannerListener();

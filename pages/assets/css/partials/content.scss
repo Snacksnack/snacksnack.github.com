@@ -1,0 +1,150 @@
+// Content Style
+#content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section {
+  border-top: .1em solid $dark-color;
+  overflow: auto;
+
+  &:nth-child(1) {
+    border-top: none;
+  }
+}
+
+.intro {
+  color: $light-color;
+  background: $dark-color;
+  padding: 20px;
+  padding-top: 10px;
+  h1 {
+    margin: 0;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+.data {
+  width: 50%;
+
+  div {
+    margin: 2.4em 1.2em;
+
+    div {
+      margin: 1.2em 0;
+    }
+  }
+}
+
+.img-container,
+.img-anchor img {
+  position: relative;
+}
+
+.text-container {
+  div {
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  a {
+    border-bottom: .1em dotted $main-blue;
+    
+    &:hover {
+      border-bottom: .1em dotted $alt-blue;
+    }
+  }
+
+  h3 {
+    margin-top: 15px;
+  }
+}
+
+.quote-title {
+  margin-bottom: -15px;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 0;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.left {
+  float: left;
+  text-align: right;
+
+  .quote {
+    margin-right: 0;
+    padding-right: .5em;
+    border-right: .5em solid $main-blue;
+  }
+}
+
+.right {
+  float: right;
+  text-align: left;
+
+  .quote {
+    margin-left: 0;
+    padding-left: .5em;
+    border-left: .5em solid $main-blue;
+  }
+}
+
+.img-anchor {
+  img {
+    width: 100%;
+  }
+
+  &:after {
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 25%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 4.7px;
+    content: 'View full image?';
+    color: $main-blue;
+    background: rgba(255,255,255,0.8);
+    
+    -webkit-transition: opacity 0.3s ease 0s;
+    -o-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+    opacity: 0;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+// Footer Style
+.footer {
+  border-top: .1em solid $dark-color;
+  z-index: 100;
+
+  ul {
+    font-size: 3em;
+    padding: .5em 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 .5em;
+    }
+  }
+}

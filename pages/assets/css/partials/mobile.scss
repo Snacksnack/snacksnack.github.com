@@ -1,0 +1,32 @@
+// Media scaling for phones etc
+@media screen and (max-width: 700px) {
+  .left {
+    text-align: left;
+    .quote {
+      margin-left: 0;
+      padding-left: .5em;
+      border: none;
+      border-left: .5em solid $main-blue;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: .5em;
+    margin-top: -20px;
+  }
+
+  .data {
+    float: none;
+    width: 100%;
+
+    &:nth-child(1) {
+      margin-bottom: -10px;
+    }
+  }
+
+  .title {
+    margin-bottom: -20px;
+  }
+}

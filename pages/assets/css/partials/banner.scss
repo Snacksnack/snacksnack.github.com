@@ -1,0 +1,58 @@
+// Banner Style
+#banner {
+  background: $background-banner;
+  background-size: cover;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#banner-text {
+  color: $dark-color;
+  width: 24em;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  margin-left: -12em;
+  padding: 2em 0;
+
+  cursor: pointer;
+  -webkit-transition: border 0.3s ease 0s, color 0.3s ease 0s, background 0.3s ease 0s;
+  -o-transition: border 0.3s ease 0s, color 0.3s ease 0s, background 0.3s ease 0s;
+  transition: border 0.3s ease 0s, color 0.3s ease 0s, background 0.3s ease 0s;
+
+  &:hover {
+    color: $alt-blue;
+
+    #logo {
+      div {
+        background-color: $alt-blue;
+      }
+    }
+  }
+}
+
+#banner-button {
+  display: block;
+  background: $background;
+  bottom: 0px;
+  height: 22px;
+  padding: 10px 0;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  -webkit-transition: height 0.3s ease 0s, color 0.3s ease 0s;
+  -o-transition: height 0.3s ease 0s, color 0.3s ease 0s;
+  transition: height 0.3s ease 0s, color 0.3s ease 0s;
+
+  &:hover {
+    color: $alt-blue;
+    height: 37px;
+  }
+}

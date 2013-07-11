@@ -1,0 +1,100 @@
+// Logo
+#logo {
+  width: 22em;
+  height: 7em;
+
+  div {
+    position: absolute;
+    background-color: $dark-color;
+    height: .7em;
+
+    -webkit-transition: background-color 0.3s ease 0s;
+    -o-transition: background-color 0.3s ease 0s;
+    transition: background-color 0.3s ease 0s;
+  }
+}
+
+.ball {
+  top: 5em;
+  width: .7em;
+  border-radius: .7em;
+}
+
+.beam {
+  top: 5em;
+  width: 4.4em;
+}
+
+.up {
+  -moz-transform:skew(20deg,-70deg);
+  -webkit-transform:skew(20deg,-70deg);
+  -o-transform:skew(20deg,-70deg);
+  -ms-transform:skew(20deg,-70deg);
+  transform:skew(20deg,-70deg);
+}
+
+.down {
+  -moz-transform:skew(-20deg,70deg);
+  -webkit-transform:skew(-20deg,70deg);
+  -o-transform:skew(-20deg,70deg);
+  -ms-transform:skew(-20deg,70deg);
+  transform:skew(-20deg,70deg);
+}
+
+#ball-left {
+  left: 2em;
+}
+
+#ball-right {
+  left: 21.3em;
+}
+
+#beam-left {
+  left: 2.3em;
+}
+
+#beam-right {
+  left: 17.3em;
+}
+
+#up-one {
+  top: 3.7em;
+  left: 6.6em;
+  width: 1em;
+}
+
+#down-one {
+  top: 5em;
+  left: 7.4em;
+  width: 2em;
+}
+
+#up-two {
+  top: 5em;
+  left: 9.2em;
+  width: 2em;
+}
+
+#down-two {
+  top: 5em;
+  left: 11em;
+  width: 2em;
+}
+
+#up-three {
+  top: 5em;
+  left: 12.8em;
+  width: 2em;
+}
+
+#down-three {
+  top: 5em;
+  left: 14.6em;
+  width: 2em;
+}
+
+#up-four {
+  top: 6.4em;
+  left: 16.4em;
+  width: 1em;
+}

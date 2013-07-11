@@ -1,0 +1,29 @@
+// Overlay
+#overlay-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.4);
+
+  img {
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    cursor: pointer;
+    
+    border: .5em solid $main-blue;
+    border-radius: .8em;
+
+    -webkit-transition: border 0.3s ease 0s;
+    -o-transition: border 0.3s ease 0s;
+    transition: border 0.3s ease 0s;
+
+    &:hover {
+      border: .5em solid $alt-blue;
+    }
+  }
+}
