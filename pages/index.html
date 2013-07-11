@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='content-type' />
-    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <meta content='text/html; charset=UTF-8' http-equiv='content-type'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <title>ohm --portfolio</title>
-    <link href='assets/favicon.png' rel='icon' type='image/png' />
-    <link href='assets/css/style.css' rel='stylesheet' type='text/css' />
+    <link href='assets/favicon.png' rel='icon' type='image/png'>
+    <link href='assets/css/style.css' rel='stylesheet' type='text/css'>
     <script src='assets/vendor/jquery-2.0.2.min.js' type='text/javascript'></script>
     <script src='assets/js/js.js' type='text/javascript'></script>
   </head>
   <body>
     <div id='overlay-wrapper'>
-      <img alt='overlay-img' src='#' />
+      <img alt='overlay-img' src='#'>
     </div>
     <div id='banner'>
       <div id='banner-text' title='Visit my GitHub profile?'>
@@ -34,6 +34,12 @@
     </div>
     <div id='content'>
       <div class='section'>
+        <div class='intro'>
+          <h1>Welcome, visitor</h1>
+          Ea beard aute, stumptown chambray commodo ut mollit Terry Richardson blog pitchfork fingerstache Odd Future Bushwick mixtape. Voluptate dreamcatcher jean shorts swag 8-bit, aliquip gastropub iPhone pitchfork whatever. Trust fund direct trade Odd Future banh mi. DIY before they sold out Brooklyn id cray adipisicing. Mixtape farm-to-table intelligentsia, chillwave pop-up american apparel brunch ugh Pinterest bespoke kale chips typewriter. Portland post-ironic incididunt, banh mi consequat cardigan aute High Life yr quis Marfa freegan Godard chillwave. Minim art party tumblr, labore plaid elit bicycle rights gastropub quinoa.
+        </div>
+      </div>
+      <div class='section'>
         <div class='title'>
           <h1>Picker</h1>
           Custom startpage, should work properly in all modern web browsers
@@ -41,7 +47,7 @@
         <div class='data left'>
           <div class='img-container'>
             <a class='img-anchor' href='assets/img/startpage.jpg'>
-              <img alt='startpage' src='assets/img/startpage.jpg' />
+              <img alt='startpage' src='assets/img/startpage.jpg'>
             </a>
           </div>
         </div>
@@ -49,23 +55,23 @@
           <div class='text-container'>
             <div>
               Made it modular, thanks oneesama.
-              <br />
-              <br />
+              <br>
+              <br>
               You can edit quite a lot in config.js
               <div class='quote'>
                 The amount of vertical and horizontal tabs
-                <br />
+                <br>
                 The data of each individual tab
-                <br />
+                <br>
                 The amount of pages to have (1 page means no nav)
-                <br />
+                <br>
                 Which background to use, drag-n-drop
               </div>
               Icons for the tabs can be found
               <a href='http://fontawesome.io/icons/'>here</a>
             </div>
             <a href='http://rawgithub.com/Snacksnack/Homepage/master/index.html'>Preview</a>
-            <br />
+            <br>
             <a href='https://github.com/Snacksnack/Homepage'>Repository</a>
           </div>
         </div>
@@ -74,21 +80,54 @@
         <div class='data right'>
           <div class='img-container'>
             <a class='img-anchor' href='assets/img/cappuccino.jpg'>
-              <img alt='cappuccino' src='assets/img/cappuccino.jpg' />
+              <img alt='cappuccino' src='assets/img/cappuccino.jpg'>
             </a>
+          </div>
+          <div class='text-container'>
+            <div class='quote'>
+              &lt;cappuccino&gt; Bot info - JRE Vendor: Oracle Corporation - JRE Version: 1.7.0_06 - OS Name: Windows 8 - OS Version: 6.2 - OS Arch: amd64 - OS Language: en
+            </div>
+            <div class='quote'>
+              &lt;cappuccino&gt; Wilsum, Germany: Mostly Cloudy 21.1°C/ 70.0°F Wind: NW at 3.2 KPH gusting to 8.0 KPH Humidity: 86%
+            </div>
           </div>
         </div>
         <div class='data left'>
           <div class='text-container'>
             <h2>Cappuccino</h2>
-            <div>
-              Ircbot, written in java. It has extensive features and tries to be a backup for others.
+            <div class='text'>
+              This is an overly complex IRC bot written in Java <em>- yes, java. -</em> which when properly configured can handle other bots and their commands aswell as multiple channels, people and permissions.
+              <h3 class='quote-title'>Requirements</h3>
               <div class='quote'>
-                &lt;cappuccino&gt; Bot info - JRE Vendor: Oracle Corporation - JRE Version: 1.7.0_06 - OS Name: Windows 8 - OS Version: 6.2 - OS Arch: amd64 - OS Language: en
+                <ul>
+                  <li>A computer obviously, with ~1Gb RAM (or more)</li>
+                  <li>JRE 1.7 (or newer)</li>
+                  <li>MongoDB 2.4.1 (or newer)</li>
+                </ul>
               </div>
+              <h3>Usage</h3>
+              Configure the config files, which server should it connect to, what name to use, what authentication to use, what channels to connect to, what features to enable and who are the admins?
+              <br>
+              After you've done this start MongoDB and then start the bot.
               <div class='quote'>
-                &lt;cappuccino&gt; Wilsum, Germany: Mostly Cloudy 21.1°C/ 70.0°F Wind: NW at 3.2 KPH gusting to 8.0 KPH Humidity: 86%
+                <ul>
+                  <li>git clone https://github.com/nohm/IrcBot.git</li>
+                  <li>cd IrcBot/config</li>
+                  <li>> configure the txt files</li>
+                  <li>> add a folder for each channel to configure</li>
+                  <li>> configure those channels</li>
+                  <li>mongod --dbpath &lt;path to db&gt;</li>
+                  <li>cd ..</li>
+                  <li>java -jar "IrcBot.jar"</li>
+                  <li>> learn some java and make your own features (or write me a nice wiki :))</li>
+                </ul>
               </div>
+              <h3>Features</h3>
+              It has an extensive array of features, the features can even be expanded by simply adding specially formatted classes to it which then automatically start to function as a new feature.
+              Furthermore, you can tell it to check for existing bots and their features, cappuccino will then automatically enable/disable its features based on the availability of that bot.
+              Lastly, you can add admins that maintain it so they can make it join/leave channels, change features, add bots, ignore users and more.
+              <br>
+              What is currently working? <a href="https://raw.github.com/nohm/IrcBot/master/IrcBot/config/default_config.txt">This file</a> contains the default settings so it lists about 90% of them.
             </div>
             <a href='https://github.com/Snacksnack/IrcBot/tree/master/IrcBot'>Repository</a>
           </div>
@@ -98,7 +137,7 @@
         <div class='data left'>
           <div class='img-container'>
             <a class='img-anchor' href='assets/img/gauto.png'>
-              <img alt='gauto' src='assets/img/gauto.png' />
+              <img alt='gauto' src='assets/img/gauto.png'>
             </a>
           </div>
         </div>
@@ -107,7 +146,7 @@
             <h2>Gauto</h2>
             <div>
               A batch script that fully automates gource viewing, creating and converting for you, on Windows that is.
-              <br />
+              <br>
               It has a menu for plain usage and it can read command line arguments.
             </div>
             <a href='https://github.com/Snacksnack/dotfiles/tree/master/dotfiles/gource'>Repository</a>
@@ -118,15 +157,38 @@
         <div class='data right'>
           <div class='img-container'>
             <a class='img-anchor' href='assets/img/pastie.png'>
-              <img alt='pastry' src='assets/img/pastie.png' />
+              <img alt='pastry' src='assets/img/pastie.png'>
             </a>
           </div>
         </div>
         <div class='data left'>
           <div class='text-container'>
             <h2>Pastry</h2>
-            <div>
-              Pastie script, posts files to pastie.org
+            <div class='text'>
+              A pastie posting script, you give it a file to post <em>- and a syntax if you want -</em> and it will post it for you on pastie and return a link. It will then store this link with the filename and a timestamp in the history for later usage. Every function of this simple tool can be used with single command line commands and arguments.
+              <h3 class='quote-title'>Requirements</h3>
+              <div class='quote'>
+                <ul>
+                  <li>Ruby 1.9.1 (or newer)</li>
+                </ul>
+              </div>
+              <h3 class='quote-title'>Usage</h3>
+              <div class='quote'>
+                <ul>
+                  <li>git clone https://github.com/nohm/Ruby-Pastie.git</li>
+                  <li>cd Ruby-Pastie</li>
+                  <li>ruby pastie.rb</li>
+                </ul>
+              </div>
+              <h3 class='quote-title'>Features</h3>
+              <div class='quote'>
+                <ul>
+                  <li>Private or public pasting of text</li>
+                  <li>Adding a language for syntax</li>
+                  <li>History of files posted with times and their URLs</li>
+                  <li>History clearing</li>
+                </ul>
+              </div>
             </div>
             <a href='https://github.com/Snacksnack/Ruby-Pastie/tree/master/Ruby-Pastie'>Repository</a>
           </div>

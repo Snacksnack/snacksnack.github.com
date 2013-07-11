@@ -33,6 +33,11 @@
 			#banner-button More
 
 		#content
+
+			.section
+				.intro
+					%h1 Welcome, visitor
+					Ea beard aute, stumptown chambray commodo ut mollit Terry Richardson blog pitchfork fingerstache Odd Future Bushwick mixtape. Voluptate dreamcatcher jean shorts swag 8-bit, aliquip gastropub iPhone pitchfork whatever. Trust fund direct trade Odd Future banh mi. DIY before they sold out Brooklyn id cray adipisicing. Mixtape farm-to-table intelligentsia, chillwave pop-up american apparel brunch ugh Pinterest bespoke kale chips typewriter. Portland post-ironic incididunt, banh mi consequat cardigan aute High Life yr quis Marfa freegan Godard chillwave. Minim art party tumblr, labore plaid elit bicycle rights gastropub quinoa.
 			
 			.section
 				.title
@@ -68,15 +73,43 @@
 					.img-container
 						%a.img-anchor{:href => "assets/img/cappuccino.jpg"}
 							%img{:src => "assets/img/cappuccino.jpg", :alt => "cappuccino"}/
+					.text-container
+						.quote
+							&lt;cappuccino&gt; Bot info - JRE Vendor: Oracle Corporation - JRE Version: 1.7.0_06 - OS Name: Windows 8 - OS Version: 6.2 - OS Arch: amd64 - OS Language: en
+						.quote
+							&lt;cappuccino&gt; Wilsum, Germany: Mostly Cloudy 21.1°C/ 70.0°F Wind: NW at 3.2 KPH gusting to 8.0 KPH Humidity: 86%
 				.data.left
 					.text-container
 						%h2 Cappuccino
-						%div
-							Ircbot, written in java. It has extensive features and tries to be a backup for others.
+						.text
+							This is an overly complex IRC bot written in Java <em>- yes, java. -</em> which when properly configured can handle other bots and their commands aswell as multiple channels, people and permissions.
+							%h3.quote-title Requirements
 							.quote
-								&lt;cappuccino&gt; Bot info - JRE Vendor: Oracle Corporation - JRE Version: 1.7.0_06 - OS Name: Windows 8 - OS Version: 6.2 - OS Arch: amd64 - OS Language: en
+								%ul
+									%li A computer obviously, with ~1Gb RAM (or more)
+									%li JRE 1.7 (or newer)
+									%li MongoDB 2.4.1 (or newer)
+							%h3 Usage
+							Configure the config files, which server should it connect to, what name to use, what authentication to use, what channels to connect to, what features to enable and who are the admins?
+							%br/
+							After you've done this start MongoDB and then start the bot.
 							.quote
-								&lt;cappuccino&gt; Wilsum, Germany: Mostly Cloudy 21.1°C/ 70.0°F Wind: NW at 3.2 KPH gusting to 8.0 KPH Humidity: 86%
+								%ul
+									%li git clone https://github.com/nohm/IrcBot.git
+									%li cd IrcBot/config
+									%li > configure the txt files
+									%li > add a folder for each channel to configure
+									%li > configure those channels
+									%li mongod --dbpath &lt;path to db&gt;
+									%li cd ..
+									%li java -jar "IrcBot.jar"
+									%li > learn some java and make your own features (or write me a nice wiki :))
+							%h3 Features
+							It has an extensive array of features, the features can even be expanded by simply adding specially formatted classes to it which then automatically start to function as a new feature.
+							Furthermore, you can tell it to check for existing bots and their features, cappuccino will then automatically enable/disable its features based on the availability of that bot.
+							Lastly, you can add admins that maintain it so they can make it join/leave channels, change features, add bots, ignore users and more.
+							%br/
+							What is currently working? <a href="https://raw.github.com/nohm/IrcBot/master/IrcBot/config/default_config.txt">This file</a> contains the default settings so it lists about 90% of them.
 						%a{:href => "https://github.com/Snacksnack/IrcBot/tree/master/IrcBot"} Repository
 
 			.section
@@ -101,8 +134,25 @@
 				.data.left
 					.text-container
 						%h2 Pastry
-						%div
-							Pastie script, posts files to pastie.org
+						.text
+							A pastie posting script, you give it a file to post <em>- and a syntax if you want -</em> and it will post it for you on pastie and return a link. It will then store this link with the filename and a timestamp in the history for later usage. Every function of this simple tool can be used with single command line commands and arguments.
+							%h3.quote-title Requirements
+							.quote
+								%ul
+									%li Ruby 1.9.1 (or newer)
+							%h3.quote-title Usage
+							.quote
+								%ul
+									%li git clone https://github.com/nohm/Ruby-Pastie.git
+									%li cd Ruby-Pastie
+									%li ruby pastie.rb
+							%h3.quote-title Features
+							.quote
+								%ul
+									%li Private or public pasting of text
+									%li Adding a language for syntax
+									%li History of files posted with times and their URLs
+									%li History clearing
 						%a{:href => "https://github.com/Snacksnack/Ruby-Pastie/tree/master/Ruby-Pastie"} Repository
 
 			.footer

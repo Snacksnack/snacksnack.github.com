@@ -1,8 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0; }
 
 ::selection {
   background-color: rgba(39, 75, 106, 0.3); }
@@ -43,9 +47,15 @@ h1 {
   font-size: 2.5em;
   margin: .5em; }
 
-h1, h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+h2 {
+  font-size: 1.7em; }
+
+h3 {
+  font-size: 1.2em; }
+
+h1, h2, h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   text-transform: lowercase; }
 
 #content {
@@ -57,6 +67,14 @@ h1, h2 {
   overflow: auto; }
   .section:nth-child(1) {
     border-top: none; }
+
+.intro {
+  color: #fbfbfb;
+  background: #546360;
+  padding: 20px;
+  padding-top: 10px; }
+  .intro h1 {
+    margin: 0; }
 
 .title {
   text-align: center;
@@ -81,10 +99,17 @@ h1, h2 {
   border-bottom: 0.1em dotted #274b6a; }
   .text-container a:hover {
     border-bottom: 0.1em dotted #6387a6; }
+.text-container h3 {
+  margin-top: 15px; }
+
+.quote-title {
+  margin-bottom: -15px; }
 
 .quote {
   font-style: italic;
   margin-bottom: 0; }
+  .quote ul {
+    list-style: none; }
 
 .left {
   float: left;
@@ -282,3 +307,18 @@ h1, h2 {
   top: 6.4em;
   left: 16.4em;
   width: 1em; }
+
+@media screen and (max-width: 600px) {
+  .left,
+  .right {
+    float: none;
+    text-align: left; }
+    .left .quote,
+    .right .quote {
+      margin-left: 0;
+      padding-left: .5em;
+      border: none;
+      border-left: 0.5em solid #274b6a; }
+
+  .data {
+    width: 100%; } }
