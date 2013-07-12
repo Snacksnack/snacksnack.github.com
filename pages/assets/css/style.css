@@ -1,11 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
-/* 
-Read this all you want, but it has been compiled from SCSS and not very nice to read.
-If you want nicer code just open the repository.
-[2013-07-11 15:19 nohm <nohm@github.com>]
-*/
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif; }
 
@@ -193,7 +188,8 @@ h1, h2, h3 {
 
 #banner-button {
   display: block;
-  background: url("../../assets/img/bedge_grunge.png") repeat;
+  background: #546360;
+  color: #fbfbfb;
   bottom: 0px;
   height: 22px;
   padding: 10px 0;
@@ -224,9 +220,11 @@ h1, h2, h3 {
 .intro {
   color: #fbfbfb;
   background: #546360;
+  text-align: justify;
   padding: 20px;
   padding-top: 10px; }
   .intro h1 {
+    text-align: center;
     margin: 0; }
 
 .title {

@@ -1,0 +1,5 @@
+#banner
+	#banner-text{:title => "Visit my GitHub profile?"}
+		= Haml::Engine.new(File.read('modules/logo.haml')).render
+		%h1 ohm
+	#banner-button More

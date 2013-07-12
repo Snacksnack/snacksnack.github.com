@@ -16,9 +16,11 @@
 .intro {
   color: $light-color;
   background: $dark-color;
+  text-align: justify;
   padding: 20px;
   padding-top: 10px;
   h1 {
+    text-align: center;
     margin: 0;
   }
 }
@@ -59,7 +61,7 @@
       border-bottom: .1em dotted $alt-blue;
     }
   }
-
+  
   h3 {
     margin-top: 15px;
   }
@@ -128,23 +130,6 @@
   &:hover {
     &:after {
       opacity: 1;
-    }
-  }
-}
-
-// Footer Style
-.footer {
-  border-top: .1em solid $dark-color;
-  z-index: 100;
-
-  ul {
-    font-size: 3em;
-    padding: .5em 0;
-    margin: 0;
-
-    li {
-      display: inline-block;
-      margin: 0 .5em;
     }
   }
 }

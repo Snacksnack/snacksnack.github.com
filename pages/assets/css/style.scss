@@ -1,15 +1,10 @@
-/* 
-Read this all you want, but it has been compiled from SCSS and not very nice to read.
-If you want nicer code just open the repository.
-[2013-07-11 15:19 nohm <nohm@github.com>]
-*/
-
 // Base style and modules
 @import "partials/base";
 
 // Rest of the partials
 @import "partials/banner";
 @import "partials/content";
+@import "partials/footer";
 
 // Load mobile last as it overrides styles
 @import "partials/mobile";
