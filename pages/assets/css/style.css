@@ -22,7 +22,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: url("../../assets/img/bedge_grunge.png") repeat;
+  background: #fbfbfb;
   color: #546360;
   font-family: "Noto Sans", sans-serif;
   font-size: 0.9em;
