@@ -1,0 +1,12 @@
+!!! 5
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+	%head
+		%title butenhuse
+		= Haml::Engine.new(File.read('partials/base.haml')).render
+	
+	%body
+		= Haml::Engine.new(File.read('modules/banner.haml')).render
+		= Haml::Engine.new(File.read('modules/overlay.haml')).render
+		%div
+			= Haml::Engine.new(File.read('modules/sidebar.haml')).render
+			= Haml::Engine.new(File.read('partials/content.haml')).render

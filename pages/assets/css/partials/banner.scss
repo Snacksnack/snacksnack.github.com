@@ -23,11 +23,11 @@
   transition: border 0.3s ease 0s, color 0.3s ease 0s, background 0.3s ease 0s;
 
   &:hover {
-    color: $alt-blue;
+    color: $alt-accent;
 
     #logo {
       div {
-        background-color: $alt-blue;
+        background-color: $alt-accent;
       }
     }
   }
@@ -53,7 +53,7 @@
   transition: height 0.3s ease 0s, color 0.3s ease 0s;
 
   &:hover {
-    color: $alt-blue;
+    color: $alt-accent;
     height: 37px;
   }
 }

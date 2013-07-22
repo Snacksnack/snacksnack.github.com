@@ -2,10 +2,14 @@
 //$background: url('../../assets/img/bedge_grunge.png') repeat;
 $background: #fbfbfb;
 $background-banner: url('../../assets/img/bg.jpg') no-repeat fixed 50% 0;
-$dark-color: #546360;
+
+$dark-color: #34495e;
+$medium-color: #bdc3c7;
 $light-color: #fbfbfb;
-$main-blue: rgb(39, 75, 106);
-$alt-blue: rgb(99, 135, 166);
+
+$main-accent: #2ecc71;
+$alt-accent: #27ae60;
+
 $main-font: 'Noto Sans', sans-serif;
 $title-font: 'Open Sans', sans-serif;
 
@@ -55,7 +59,7 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
-  color: $main-blue;
+  color: $main-accent;
   font-weight: 700;
 
   -webkit-transition: color 0.3s ease 0s;
@@ -63,7 +67,7 @@ a {
   transition: color 0.3s ease 0s;
 
   &:hover {
-    color: $alt-blue;
+    color: $alt-accent;
   }
 }
 

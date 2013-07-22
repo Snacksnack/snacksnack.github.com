@@ -3,9 +3,9 @@
 	.section
 		.intro
 			%h1 Welcome, visitor
-			Ea beard aute, stumptown chambray commodo ut mollit Terry Richardson blog pitchfork fingerstache Odd Future Bushwick mixtape. Voluptate dreamcatcher jean shorts swag 8-bit, aliquip gastropub iPhone pitchfork whatever. Trust fund direct trade Odd Future banh mi. DIY before they sold out Brooklyn id cray adipisicing. Mixtape farm-to-table intelligentsia, chillwave pop-up american apparel brunch ugh Pinterest bespoke kale chips typewriter. Portland post-ironic incididunt, banh mi consequat cardigan aute High Life yr quis Marfa freegan Godard chillwave. Minim art party tumblr, labore plaid elit bicycle rights gastropub quinoa.
+			This is my portfolio, it's where I show off my 'skills' with completed projects and downloads of them. I'm currently working on making a proper template for this page and my contact info is at the bottom. I'll also be adding more text and projects soon.
 
-	.section
+	.section.lr-30-70
 		.title
 			%h1 Picker
 			Custom startpage, should work properly in all modern web browsers
@@ -21,19 +21,20 @@
 						The amount of pages to have (1 page means no nav)
 						%br/
 						Which background to use, drag-n-drop
-					Icons for the tabs can be found
+
+					A full manual for usage in multiple browsers can be found in the repository and icons for the tabs can be found
 					%a{:href => "http://fontawesome.io/icons/"} here
-				%a{:href => "http://rawgithub.com/nohm/Homepage/master/index.html"} Preview
-				%br
-				%a{:href => "https://github.com/nohm/Homepage"} Repository
+				.links
+					%a{:href => "http://rawgithub.com/nohm/Homepage/master/index.html"} Preview
+					%a{:href => "https://github.com/nohm/Homepage"} Repository
 
 		.data.left
 			.img-container
 				%a.img-anchor{:href => "assets/img/startpage.jpg"}
 					%img{:src => "assets/img/startpage.jpg", :alt => "startpage"}/
 
-	.section
-		.data.left
+	.section.lr-30-70
+		.data.right
 			.text-container
 				%h2 Cappuccino
 				.text
@@ -52,21 +53,22 @@
 						%ul
 							%li git clone https://github.com/nohm/IrcBot.git
 							%li cd IrcBot/config
-							%li > configure the txt files
-							%li > add a folder for each channel to configure
-							%li > configure those channels
+							%li &gt; configure the txt files
+							%li &gt; add a folder for each channel to configure
+							%li &gt; configure those channels
 							%li mongod --dbpath &lt;path to db&gt;
 							%li cd ..
 							%li java -jar "IrcBot.jar"
-							%li > learn some java and make your own features (or write me a nice wiki :))
+							%li &gt; learn some java and make your own features (or write me a nice wiki :))
 					%h3 Features
 					It has an extensive array of features, the features can even be expanded by simply adding specially formatted classes to it which then automatically start to function as a new feature.
 					Furthermore, you can tell it to check for existing bots and their features, cappuccino will then automatically enable/disable its features based on the availability of that bot.
 					Lastly, you can add admins that maintain it so they can make it join/leave channels, change features, add bots, ignore users and more.
 					%br/
 					What is currently working? <a href="https://raw.github.com/nohm/IrcBot/master/IrcBot/config/default_config.txt">This file</a> contains the default settings so it lists about 90% of them.
-				%a{:href => "https://github.com/nohm/IrcBot/tree/master/IrcBot"} Repository
-		.data.right
+				.links
+					%a{:href => "https://github.com/nohm/IrcBot/tree/master/IrcBot"} Repository
+		.data.left
 			.img-container
 				%a.img-anchor{:href => "assets/img/cappuccino.jpg"}
 					%img{:src => "assets/img/cappuccino.jpg", :alt => "cappuccino"}/
@@ -76,22 +78,29 @@
 				.quote
 					&lt;cappuccino&gt; Wilsum, Germany: Mostly Cloudy 21.1°C/ 70.0°F Wind: NW at 3.2 KPH gusting to 8.0 KPH Humidity: 86%
 
-	.section
+	.section.lr-30-70
 		.data.right
 			.text-container
 				%h2 Gauto
 				.text
-					A batch script that fully automates gource viewing, creating and converting for you, on Windows that is.
+					A <em>batch</em> script that fully automates gource viewing, creating and converting for you, on Windows that is.
 					%br/
 					It has a menu for plain usage and it can read command line arguments.
-				%a{:href => "https://github.com/nohm/dotfiles/tree/master/dotfiles/gource"} Repository
+					%h3.quote-title Usage
+					.quote
+						%ul
+							%li Make sure you have ffmpeg and gource installed and added to your %PATH% variable
+							%li Download the gauto batch file
+							%li Run the batch file using 'gauto &lt;command&gt;'
+				.links
+					%a{:href => "https://github.com/nohm/dotfiles/tree/master/dotfiles/gource"} Repository
 		.data.left
 			.img-container
 				%a.img-anchor{:href => "assets/img/gauto.png"}
 					%img{:src => "assets/img/gauto.png", :alt => "gauto"}/
 
-	.section
-		.data.left
+	.section.lr-30-70
+		.data.right
 			.text-container
 				%h2 Pastry
 				.text
@@ -113,8 +122,9 @@
 							%li Adding a language for syntax
 							%li History of files posted with times and their URLs
 							%li History clearing
-					%a{:href => "https://github.com/nohm/Ruby-Pastie/tree/master/Ruby-Pastie"} Repository
-		.data.right
+					.links
+						%a{:href => "https://github.com/nohm/Ruby-Pastie/tree/master/Ruby-Pastie"} Repository
+		.data.left
 			.img-container
 				%a.img-anchor{:href => "assets/img/pastie.png"}
 					%img{:src => "assets/img/pastie.png", :alt => "pastry"}/

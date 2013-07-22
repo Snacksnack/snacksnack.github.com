@@ -1,0 +1,35 @@
+#head
+	#notice
+		I use javascript only to enhance the page, not to track you.
+		%br/
+		Don't trust me? Check the source:
+		%a{:href => "assets/js/snack.js"} 'snack.js'
+	Introduction goes here.
+.content
+	.section.text-only
+		%h2#news News
+		News content goed here
+	.section.text-only.information
+		%h2#information Information
+		%table.people
+		%ul.columns
+			%li 
+				%strong Extra columns
+			%li
+				%input{:type => 'checkbox', :name => 'extra'} Active
+			%li
+				%input{:type => 'checkbox', :name => 'extra'} Paid
+			%li
+				%input{:type => 'text', :name => 'extratextbox', :value => '0'} Extra columns
+
+		.links
+			%span.checked Checked list
+			%span.unchecked Unchecked list
+
+	.section
+		%h2#photos Photos
+		Photo info goes here
+		%a{:href => 'assets/img/zebra.jpg'}
+			%img{:src => 'assets/img/zebra.jpg'}
+		.links
+			%a{:href => 'https://www.dropbox.com/sh/xsqbvp3au48y9uo/x8FQZFO1-W'} Gallery

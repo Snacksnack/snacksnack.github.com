@@ -15,7 +15,7 @@
     max-height: 90%;
     cursor: pointer;
     
-    border: .5em solid $main-blue;
+    border: .5em solid $main-accent;
     border-radius: .8em;
 
     -webkit-transition: border 0.3s ease 0s;
@@ -23,7 +23,7 @@
     transition: border 0.3s ease 0s;
 
     &:hover {
-      border: .5em solid $alt-blue;
+      border: .5em solid $alt-accent;
     }
   }
 }

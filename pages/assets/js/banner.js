@@ -12,7 +12,7 @@ $(function addBannerListener() {
 			'margin-top': (scrollPos/diff) + 'px',
 			'opacity': opacity
 		});
-		// Hide the banner if it's opacity <= 0
+		// Hide the banner-text if it's opacity <= 0
 		if (opacity <= 0) {
 			$('#banner-text').hide();
 		} else {

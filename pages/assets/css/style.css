@@ -23,7 +23,7 @@ body {
   width: 100%;
   position: absolute;
   background: #fbfbfb;
-  color: #546360;
+  color: #34495e;
   font-family: "Noto Sans", sans-serif;
   font-size: 0.9em;
   font-weight: 400; }
@@ -31,13 +31,13 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
-  color: #274b6a;
+  color: #2ecc71;
   font-weight: 700;
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s; }
   a:hover {
-    color: #6387a6; }
+    color: #27ae60; }
 
 p {
   margin: 0;
@@ -63,7 +63,7 @@ h1, h2, h3 {
   height: 7em; }
   #logo div {
     position: absolute;
-    background-color: #546360;
+    background-color: #34495e;
     height: .7em;
     -webkit-transition: background-color 0.3s ease 0s;
     -o-transition: background-color 0.3s ease 0s;
@@ -153,13 +153,13 @@ h1, h2, h3 {
     max-width: 90%;
     max-height: 90%;
     cursor: pointer;
-    border: 0.5em solid #274b6a;
+    border: 0.5em solid #2ecc71;
     border-radius: .8em;
     -webkit-transition: border 0.3s ease 0s;
     -o-transition: border 0.3s ease 0s;
     transition: border 0.3s ease 0s; }
     #overlay-wrapper img:hover {
-      border: 0.5em solid #6387a6; }
+      border: 0.5em solid #27ae60; }
 
 #banner {
   background: url("../../assets/img/bg.jpg") no-repeat fixed 50% 0;
@@ -170,7 +170,7 @@ h1, h2, h3 {
   overflow: hidden; }
 
 #banner-text {
-  color: #546360;
+  color: #34495e;
   width: 24em;
   position: fixed;
   top: 25%;
@@ -182,13 +182,13 @@ h1, h2, h3 {
   -o-transition: border 0.3s ease 0s, color 0.3s ease 0s, background 0.3s ease 0s;
   transition: border 0.3s ease 0s, color 0.3s ease 0s, background 0.3s ease 0s; }
   #banner-text:hover {
-    color: #6387a6; }
+    color: #27ae60; }
     #banner-text:hover #logo div {
-      background-color: #6387a6; }
+      background-color: #27ae60; }
 
 #banner-button {
   display: block;
-  background: #546360;
+  background: #34495e;
   color: #fbfbfb;
   bottom: 0px;
   height: 22px;
@@ -204,7 +204,7 @@ h1, h2, h3 {
   -o-transition: height 0.3s ease 0s, color 0.3s ease 0s;
   transition: height 0.3s ease 0s, color 0.3s ease 0s; }
   #banner-button:hover {
-    color: #6387a6;
+    color: #27ae60;
     height: 37px; }
 
 #content {
@@ -212,14 +212,14 @@ h1, h2, h3 {
   margin: 0 auto; }
 
 .section {
-  border-top: 0.1em solid #546360;
+  border-top: 0.1em solid #bdc3c7;
   overflow: auto; }
   .section:nth-child(1) {
     border-top: none; }
 
 .intro {
   color: #fbfbfb;
-  background: #546360;
+  background: #34495e;
   text-align: justify;
   padding: 20px;
   padding-top: 10px; }
@@ -231,12 +231,25 @@ h1, h2, h3 {
   text-align: center;
   margin-bottom: .5em; }
 
-.data {
+.data div {
+  margin: 2.4em 1.2em; }
+  .data div div {
+    margin: 1.2em 0; }
+
+.lr-30-70 .left {
+  width: 30%; }
+.lr-30-70 .right {
+  width: 70%; }
+
+.lr-50-50 .left {
   width: 50%; }
-  .data div {
-    margin: 2.4em 1.2em; }
-    .data div div {
-      margin: 1.2em 0; }
+.lr-50-50 .right {
+  width: 50%; }
+
+.lr-70-30 .left {
+  width: 70%; }
+.lr-70-30 .right {
+  width: 30%; }
 
 .img-container,
 .img-anchor img {
@@ -247,9 +260,11 @@ h1, h2, h3 {
   margin-left: 0;
   margin-right: 0; }
 .text-container a {
-  border-bottom: 0.1em dotted #274b6a; }
+  border-bottom: 0.1em dotted #2ecc71; }
   .text-container a:hover {
-    border-bottom: 0.1em dotted #6387a6; }
+    border-bottom: 0.1em dotted #27ae60; }
+.text-container h2 {
+  margin-top: -5px; }
 .text-container h3 {
   margin-top: 15px; }
 
@@ -268,7 +283,7 @@ h1, h2, h3 {
   .left .quote {
     margin-right: 0;
     padding-right: .5em;
-    border-right: 0.5em solid #274b6a; }
+    border-right: 0.5em solid #2ecc71; }
 
 .right {
   float: right;
@@ -276,7 +291,7 @@ h1, h2, h3 {
   .right .quote {
     margin-left: 0;
     padding-left: .5em;
-    border-left: 0.5em solid #274b6a; }
+    border-left: 0.5em solid #2ecc71; }
 
 .img-anchor img {
   width: 100%; }
@@ -291,7 +306,7 @@ h1, h2, h3 {
   bottom: 0;
   margin-bottom: 4.7px;
   content: 'View full image?';
-  color: #274b6a;
+  color: #2ecc71;
   background: rgba(255, 255, 255, 0.8);
   -webkit-transition: opacity 0.3s ease 0s;
   -o-transition: opacity 0.3s ease 0s;
@@ -300,8 +315,11 @@ h1, h2, h3 {
 .img-anchor:hover:after {
   opacity: 1; }
 
+.links a {
+  margin-right: 5px; }
+
 .footer {
-  border-top: 0.1em solid #546360;
+  border-top: 0.1em solid #bdc3c7;
   z-index: 100; }
   .footer ul {
     font-size: 3em;
@@ -318,7 +336,7 @@ h1, h2, h3 {
       margin-left: 0;
       padding-left: .5em;
       border: none;
-      border-left: 0.5em solid #274b6a; }
+      border-left: 0.5em solid #2ecc71; }
 
   h2 {
     text-align: center;
